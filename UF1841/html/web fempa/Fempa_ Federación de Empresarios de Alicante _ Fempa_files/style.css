@@ -1,0 +1,1306 @@
+/*
+Theme Name: the7dtchild
+Author: Dream-Theme
+Author URI: http://dream-theme.com/
+Description: The7 is perfectly scalable, performance and SEO optimized, responsive, retina ready multipurpose WordPress theme. It will fit every site – big or small. From huge corporate portals to studio or personal sites – The7 will become a great foundation for your next project!
+Version: 1.0.0
+License: This WordPress theme is comprised of two parts: (1) The PHP code and integrated HTML are licensed under the GPL license as is WordPress itself.  You will find a copy of the license text in the same directory as this text file. Or you can read it here: http://wordpress.org/about/gpl/ (2) All other parts of the theme including, but not limited to the CSS code, images, and design are licensed according to the license purchased. Read about licensing details here: http://themeforest.net/licenses/regular_extended
+Template: dt-the7
+*/
+
+
+/**
+ * Header Top Bar
+ */
+
+.masthead .top-bar .mini-contacts {
+    font-size: 14px;
+}
+
+
+/**
+ * Home Slider (mobile)
+ */
+@media (max-width: 600px) {
+    .elementor-10 .elementor-element-af1f873 .swiper-slide-bg {
+        background-position-x: 80%;
+        min-height: 70%;
+    }
+
+    .elementor-10 .elementor-element-af1f873 .elementor-background-overlay {
+        background-color: transparent !important;
+        background-image: linear-gradient(to top, #094f73 43%, transparent 74%);
+    }
+
+    .elementor-10 .elementor-element-af1f873 .swiper-slide-inner {
+        align-items: flex-end !important;
+        padding: 0px 40px 30px 40px !important;
+    }
+
+    .elementor-10 .elementor-element-af1f873 .elementor-swiper-button {
+        top: 37%;
+        font-size: 40px;
+    }
+
+    .elementor-10 .elementor-element-af1f873 .elementor-swiper-button-next {
+        right: 30px;
+    }
+}
+
+
+/**
+ * Home Carousel Servicios
+ */
+.servicios-carousel-home article .dt-btn:not(.btn-light):not(.light-bg-btn):not(.outline-btn):not(.outline-bg-btn):not(.btn-custom-style) {
+    background: #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #094F73;
+    color: #094F73;
+}
+
+
+body.archive.category article.post {
+    margin: 40px 0
+}
+
+body.archive.category .blog-content {
+    padding-left: 55px;
+}
+
+body.archive.category .blog-content.wf-td {
+    vertical-align: top;
+}
+
+
+body.post-template-default .elementor-widget-theme-post-title .elementor-heading-title {
+    color: #094F73;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 32px;
+
+    padding: 0;
+    margin: 0;
+}
+
+.single-related-posts > h3 {
+    align-self: normal;
+}
+
+body.post-template-default .single-related-posts > h3:after {
+    display: none;
+}
+
+.single .post:not(.type-event) .post-thumbnail {
+    margin-bottom: 26px
+}
+
+
+/*
+ * Opciones del Tema - Botones para compartir
+ * /wp-admin/admin.php?page=of-likebuttons-menu
+ */
+.single .single-share-box {
+    border-top: solid 1px #5E7986;
+    /*border-bottom: solid 1px #5E7986;*/
+    margin-bottom: 0;
+    padding: 20px 0 25px;
+}
+
+.share-link-description {
+    color: #094F73;
+    margin-bottom: 14px;
+}
+
+.single-share-box .share-buttons a {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    background-color: #829ba7;
+    color: #fff !important;
+    border: none;
+}
+
+.post-navigation .nav-links {
+    border-color: #5E7986;
+    border-width: 2px 0;
+}
+
+.post-navigation .nav-links .post-title {
+    color: #094F73;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+.post-navigation .nav-previous {
+    padding-left: 40px;
+}
+
+.post-navigation .nav-next {
+    padding-right: 40px;
+}
+
+.nav-servicio .elementor-item-active {
+    font-weight: bold !important;
+}
+
+.nav-servicio .sub-menu .menu-item {
+    border-bottom-width: 0 !important;
+}
+
+.nav-servicio .sub-menu li:first-of-type {
+    border-top-width: 1px;
+}
+
+.nav-servicio .sub-menu li:only-of-type {
+    border-style: solid;
+    border-color:  #cbd8de;
+}
+
+.nav-servicio .elementor-item {
+    width: fit-content;
+    width: -moz-fit-content;
+    font: normal normal normal 16px Titillium Web;
+}
+
+.nav-servicio a:hover,
+.nav-servicio a:focus {
+    line-height: initial;
+}
+
+.nav-servicio .elementor-sub-item {
+    font-size: 15px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    line-height: 23px;
+}
+
+.nav-servicio .sub-arrow {
+    color: #094F73 !important;
+}
+
+.nav-servicio .sub-menu .elementor-item-active {
+    color: #094F73 !important;
+}
+
+.nav-servicio .elementor-item:focus {
+    background-color: #FCFCFC !important;
+}
+
+.nav-servicio .elementor-sub-item:focus {
+    background-color: #FCFCFC !important;
+}
+
+.branding .menu-select .customSelect1 .customSelectInner i {
+    font-size: 16px !important;
+    color: #839BA7 !important;
+}
+
+.branding .mini-widgets .mini-login i, .branding .mini-login .submit i {
+    font-size: 16px !important;
+    color: #094F73 !important;
+    margin-right: 12px !important;
+}
+
+.branding .mini-widgets .mini-login, .branding .mini-login .submit {
+    display: flex !important;
+    color: #094F73 !important;
+}
+
+.branding .mini-widgets .mini-search i {
+    font-weight: bold !important;
+    color: #094F73 !important;
+}
+
+/*.masthead .mini-widgets > *, .masthead .mobile-mini-widgets > * {
+    margin-left: 16.5px !important;
+    margin-right: 16.5px !important;
+}*/
+
+@media screen and (max-width: 560px) {
+    .articles-list article.post {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articles-list article.post .blog-media, .articles-list article.post .blog-content {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
+
+.elementor-pagination {
+    margin-top: 50px;
+    line-height: 55px;
+}
+
+.elementor-pagination .page-numbers {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+
+    padding: 10px 16px;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+.elementor-pagination .page-numbers.prev, .elementor-pagination .page-numbers.next {
+    padding: 3px 38px 7px 38px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.elementor-pagination .page-numbers.current {
+    background-color: #094F73;
+    border-color: #094F73;
+    color: white;
+}
+
+#search-course-header-title {
+    display: flex;
+    justify-content: center;
+}
+
+#search-course-header-title .elementor-icon-box-icon {
+    margin-right: 25px;
+    /*margin-top: 15px;*/
+}
+
+@media screen and (max-width: 460px) {
+    #search-course-header-title h2 {
+        font-size: 24px;
+    }
+
+    #search-course-header-title .elementor-icon-box-icon {
+        margin-right: 0;
+    }
+
+    #search-course-header-title .elementor-icon-box-icon .elementor-icon {
+        font-size: 40px;
+    }
+}
+
+.global-widget-programación-cursos article.elementor-post {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.global-widget-programación-cursos article.elementor-post .elementor-post__text {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 48px 30px 48px !important;
+    /*max-height: 280px !important;*/
+}
+
+.global-widget-programación-cursos .elementor-post__read-more {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.global-widget-programación-cursos i.dt-icon-the7-arrow-552 {
+    font-size: 15px;
+    margin-left: 3px;
+}
+
+.global-widget-programación-cursos .elementor-post__text .elementor-post__meta-data:first-of-type {
+    font-style: normal;
+}
+
+.global-widget-programación-cursos article.elementor-post .elementor-post__read-more {
+    margin-top: 4px;
+}
+
+.elementor-post__thumbnail .evento-date .entry-month::after,
+.elementor-post__thumbnail .curso-date .entry-month::after {
+    position: absolute;
+    height: 2px;
+    content: "";
+    left: 50%;
+    bottom: -2px;
+    width: 14px;
+    margin-left: -7px;
+}
+
+.elementor-post__thumbnail .evento-date .entry-month::after {
+    top: 19px;
+}
+
+.elementor-post__thumbnail .evento-date .entry-date::after,
+.elementor-post__thumbnail .curso-date .entry-date::after {
+    position: absolute;
+    height: 2px;
+    content: "";
+    left: 50%;
+    bottom: -2px;
+    width: 14px;
+    margin-left: -7px;
+}
+
+.elementor-post__thumbnail .evento-date .entry-date::after {
+    bottom: 30px;
+}
+
+.fancy-date a {
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    min-width: 42px;
+    top: 30px;
+}
+
+.elementor-post__thumbnail .evento-date {
+    position: absolute;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 10px;
+    z-index: 30;
+    box-sizing: border-box;
+    text-decoration: none;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    min-height: 80px;
+    min-width: 100%;
+    padding: 2px 0;
+}
+
+.cta-card .elementor-cta__button {
+    padding: 6px 25px;
+}
+
+.cta-card .elementor-cta__button span.btn-right-arrow-icon {
+    font-size: 10px;
+}
+
+.elementor-post__thumbnail .fancy-date.evento-date {
+    padding: 0;
+    margin-top: -3px;
+}
+
+.elementor-post__thumbnail .fancy-date.evento-date .entry-month, .fancy-date.evento-date .entry-year {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.elementor-post__thumbnail .fancy-date.evento-date .entry-month, .fancy-date.evento-date .entry-year, .fancy-date.evento-date .entry-date {
+    font-family: Titillium Web;
+}
+
+.elementor-post__thumbnail .fancy-date.evento-date .entry-month:first-letter {
+    text-transform: uppercase;
+}
+
+.elementor-post__thumbnail .fancy-date.evento-date .entry-month {
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: lowercase;
+}
+
+.elementor-post__thumbnail .fancy-date.evento-date .entry-date:after {
+    background: white;
+    bottom: 23px;
+    height: 1px;
+}
+
+.elementor-post__thumbnail .fancy-date.evento-date .entry-month:after {
+    background: white;
+
+    top: 22px !important;
+    width: 18px;
+    height: 1px;
+    margin-left: -9px;
+}
+
+.elementor-post__thumbnail .fancy-date.evento-date .entry-year {
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: normal;
+}
+
+.elementor-post__thumbnail .fancy-date.evento-date .entry-date {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+
+.fancy-date.evento-date {
+    background: #094F73;
+    color: white;
+    margin-bottom: 20px !important;
+}
+
+.elementor-posts--skin-fempa-cursos .elementor-post__title {
+    margin-top: 20px !important;
+}
+
+.elementor-post__thumbnail__link:hover {
+    color: white;
+}
+
+.elementor-post__thumbnail.elementor-post.elementor-grid-item {
+    margin-bottom: 20px;
+}
+
+.elementor-posts-container.elementor-posts.elementor-posts--skin-fempa-eventos-home {
+    grid-row-gap: 20px;
+}
+
+.fancy-date.curso-date a {
+    top: 0 !important;
+    right: 0 !important;
+    background: #094F73;
+}
+
+.fancy-date.curso-date a:not(.elementor-post__thumbnail__link) {
+    padding: 6px 12px;
+}
+
+.fancy-date.curso-date a span {
+    color: white !important;
+    font-family: Titillium Web !important;
+}
+
+.fancy-date.curso-date span.entry-date {
+    font-size: 25px;
+    line-height: 38px;
+    order: 0;
+}
+
+.fancy-date.curso-date span.entry-month {
+    order: 1;
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: normal;
+}
+
+.fancy-date.curso-date span.entry-year {
+    order: 2;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+}
+
+.fancy-categories {
+    top: 9px;
+    left: 13px;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    width: calc(100% - 60px);
+}
+
+.fancy-categories a {
+    padding: 4px 11px;
+    text-transform: uppercase;
+    font-family: "Titillium Web";
+}
+
+.fancy-categories a:not(:last-child) {
+    margin-right: 8px;
+}
+
+.fancy-date a {
+    top: 10px;
+    right: 15px;
+}
+
+.fancy-date a > * {
+    font-family: "Titillium Web" !important;
+}
+
+.fancy-date a .entry-month {
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: normal;
+}
+
+.fancy-date a .entry-month:after, .fancy-date a .entry-date:after {
+    height: 1px !important;
+    width: 18px;
+    top: 21px;
+    right: 1px;
+}
+
+.fancy-date a .entry-year {
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: normal;
+}
+
+.fancy-date a .entry-date {
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.fancy-date a .entry-date:after {
+    top: 32px!important;
+    right: -3px!important;
+}
+
+.post-thumbnail .fancy-date a {
+    top: 10px;
+    right: 12px;
+}
+
+.post-thumbnail .fancy-categories {
+    top: 10px;
+    left: 8px;
+}
+
+.blog-media .fancy-date .entry-month:after {
+    top: 24px;
+    right: 1px;
+}
+
+.blog-media .fancy-date .entry-date:after {
+    top: 37px!important;
+    right: -3px!important;
+}
+
+@media only screen and (max-width: 785px){
+    .responsive-iconbox .elementor-widget-icon-box .elementor-icon-box-wrapper {
+        display: flex;
+    }
+
+    .responsive-iconbox .elementor-widget-icon-box .elementor-icon-box-content {
+        margin-left: 7px;
+    }
+}
+
+.btn-read-more-news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+
+    padding: 7px 0;
+    background: #48CC5C 0 0 no-repeat padding-box;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-read-more-news:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 785px){
+    .paginator.custom .page-numbers.nav-next,
+    .paginator.custom .page-numbers.nav-prev{
+        padding: 10px 16px!important;
+    }
+    .elementor-pagination .page-numbers.next,
+    .elementor-pagination .page-numbers.prev{
+        padding: 5px 16px;
+    }
+    .paginator.justify-end {
+        justify-content: center!important;
+    }
+}
+
+.paginator.justify-end {
+    justify-content: flex-end;
+}
+
+.paginator.custom .page-numbers.act {
+    background-color: #094F73;
+    border-color: #094F73;
+    color: white !important;
+}
+.paginator.custom .page-numbers.nav-next,
+.paginator.custom .page-numbers.nav-prev{
+    padding: 10px 38px;
+}
+.paginator.custom .page-numbers {
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+.paginator.custom a:hover::after,
+.paginator.custom a.act::after {
+    opacity: 0 !important;
+}
+
+.fancy-date.evento-detalle a{
+    top: 43px;
+    right: 30px;
+}
+
+.btn-read-more-news > i {
+    margin-left: 6px;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: -2px;
+}
+
+/* Widget de Elementor 'Text editor' */
+.elementor-text-editor a {
+    color: #0093FF;
+}
+
+/** POSTS LAYOUT **/
+/* body.post-template-default .wf-container-main{
+    display: flex !important;
+}
+body.post-template-default .wf-container-main .content{
+    width: 69.99%;
+}
+body.post-template-default .wf-container-main .sidebar{
+    width: 30%;  
+} */
+@media screen and (min-width: 993px) {
+    .sidebar-right .wf-container-main {
+        grid-template-columns: 69.99% 30%;
+    }
+    }
+/** SIDEBAR POSTS **/
+body.post-template-default .wf-container-main .sidebar .sidebar-content .widget-title{
+    text-transform: uppercase;
+    color: #094F73;
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: bold;
+}
+
+body.post-template-default .wf-container-main .sidebar .sidebar-content .widget_presscore-blog-categories ul{
+    margin: 0;
+    padding: 20px 24px;
+    background-color: #FCFCFC;
+}
+body.post-template-default .wf-container-main .sidebar .sidebar-content .widget_presscore-blog-categories ul li.cat-item{
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #094f73;
+    border-bottom: 1px solid rgba(7, 68, 99, .2);
+}
+body.post-template-default .wf-container-main .sidebar .sidebar-content .widget_presscore-blog-categories ul li.cat-item:last-child{
+    border-bottom: 0px;
+}
+body.post-template-default .wf-container-main .sidebar .sidebar-content .widget_presscore-blog-categories ul li.cat-item a .item-name,
+body.post-template-default .wf-container-main .sidebar .sidebar-content .widget_presscore-blog-categories ul li.cat-item a .item-num{
+    font-size: 16px;
+    line-height: 24px;
+    color: #094f73 !important;
+}
+body.post-template-default .wf-container-main .sidebar .recent-posts{
+    padding: 30px 20px;
+    background-color: #FCFCFC;
+}
+/*body.post-template-default .wf-container-main .sidebar .recent-posts .mini-post-img{
+    display: none;
+}*/
+body.post-template-default .wf-container-main .sidebar .recent-posts .post-content a{
+    color: #3D484D;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+}
+body.post-template-default .wf-container-main .sidebar .recent-posts .post-content time{
+    color: #094F73;
+    font-size: 14px;
+    line-height: 1.3em;
+    margin-bottom: 0px;
+}
+body.post-template-default .wf-container-main .sidebar .widget_media_image{
+    text-align: center;
+}
+@media all and (max-width: 992px){
+    body.post-template-default .wf-container-main{
+        display: block !important;
+    }
+    body.post-template-default .wf-container-main .content{
+        width: 100%;
+    }
+    body.post-template-default .wf-container-main .sidebar{
+        width: 100%; 
+        max-width: 420px;
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}
+@media all and (max-width: 565px){
+    .post-navigation .nav-previous {
+        padding-left: 0px;
+    }    
+}
+
+/** MOBILE MENU **/
+@media all and (max-width: 1024px){
+    .dt-mobile-header .mobile-header-scrollbar-wrap{
+        padding: 45px 0px 30px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    #mobile-menu li.menu-item{
+        border-bottom: 2px solid #EFEFEF;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        min-height: 50px; 
+    }
+    #mobile-menu li.menu-item .sub-nav li{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+        border-bottom: 1px solid #EFEFEF;
+    }
+    #mobile-menu li.menu-item .sub-nav li:last-child{
+        border-bottom: 0px;
+    }
+    #mobile-menu li.menu-item i.next-level-button:before{
+        color: #61CE70 !important;
+        font-weight: 700;
+    }
+    .right-mobile-menu-close-icon .dt-close-mobile-menu-icon{
+        right: 20px;
+        top: 0px;  
+    }
+    .dt-mobile-header .mobile-mini-widgets-in-menu{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 0px !important;
+        margin: 5px 0px 5px 0 !important;
+        display: flex;
+    }
+    .dt-mobile-header .mobile-mini-widgets-in-menu>*{
+        margin: 5px 0px 5px 0 !important;        
+    }
+    .dt-mobile-header .mobile-mini-widgets-in-menu .soc-ico{
+        width: 100%;
+        justify-content: center;
+        order: 2;
+    }
+    .dt-mobile-header .mobile-mini-widgets-in-menu .soc-ico a{
+        width: 35px;
+        height: 35px;
+        margin: 0 3px;
+        line-height: 35px;
+        border-radius: 20px;
+        background-color: #cedce3;
+    }
+    .dt-mobile-header .mobile-mini-widgets-in-menu .soc-ico a:before{
+        background-color: #cedce3 !important;
+    }
+    .masthead .soc-ico.custom-bg a:before, .masthead .soc-ico.accent-bg a:before, .dt-mobile-header .soc-ico.custom-bg a:before, .dt-mobile-header .soc-ico.accent-bg a:before {
+        background-color: #cedce3;
+    }
+    .dt-mobile-header .mobile-mini-widgets-in-menu .soc-ico a .soc-font-icon{
+        color: #104f73 !important;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .dt-mobile-header .mobile-mini-widgets-in-menu .microwidget-btn{
+        width: 100%;
+        order: 1;
+        margin-bottom: 20px !important;
+        height: 
+    }
+    .dt-mobile-header .mobile-mini-widgets-in-menu .microwidget-btn span {
+        color: #ffffff;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.half-content-widget, .half-content-widget * {
+    height: 100% !important;
+    }
+    
+    .half-content-widget img {
+    width: 100% !important;
+    object-fit: cover !important;
+    }
+/** AJUSTES TABLET **/
+
+/** LANDSCAPE 1024px **/
+@media all and (min-width: 779px) and (max-width: 1024px){
+    /** HEADER **/
+    .mini-contacts.clock{
+        /*display: none !important;*/
+        position: absolute;
+        left: 60%;
+        font-size: 14px !important;
+    }
+    /** TITULOS CON SEPARADOR MEDIO **/
+    .section-titulo-separador-medio{
+
+    }
+    /** SLIDER HOME **/
+    body.home .elementor-10 .elementor-element.elementor-element-af1f873 .swiper-slide-inner {
+        padding: 0px 0px 0px 80px;
+        text-align: left;
+    }
+    /** NOTICIAS DESTACADAS HOME **/
+    .section-noticias-home{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-noticias-home .portfolio-shortcode.resize-by-browser-width .dt-css-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-noticias-home .elementor-grid-1.elementor-grid-tablet-2 .elementor-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+    /** QUE HACE FEMPA HOME **/
+    .section-que-hace-fempa .responsive-iconbox h3{
+        margin-bottom: 30px;
+    }
+    .section-que-hace-fempa .responsive-iconbox .elementor-col-66 .elementor-column-wrap{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .section-que-hace-fempa .box-blanco-icono .elementor-col-25 .elementor-element-populated{
+        margin: 0px;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    /** SECTION FEMPA OFRECE - FLIPBOX FOTO CON ICONO - HOME  **/
+    .section-fempa-ofrece{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .section-fempa-ofrece .elementor-col-33:last-child .elementor-element-populated{
+        margin-right: 0px !important;
+    }
+    /** SECTION SERVICIOS FEMPA - HOME **/
+    .section-servicios-home{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    /** SECTION PUBLICA TU OFERTA DE TRABAJO - HOME **/
+    .section-publica-oferta{
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .section-publica-oferta .elementor-col-50{
+        width: 100%;
+    }
+    .section-publica-oferta .elementor-col-50 .elementor-element-populated{
+        margin-top: 40px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px !important;
+    }
+    /** TITULO + BOTÓN CURSOS HOME**/
+    .section-titulo-cursos .elementor-col-66{
+        width: 100%;
+    }
+    .section-titulo-cursos .elementor-col-66 h2{
+        text-align: center;
+    }
+    /** SECTION EVENTOS + SOCIOS **/
+    .section-eventos-home{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .section-eventos-home .elementor-posts--skin-fempa-eventos-home {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-eventos-home .col-socios .elementor-image-box-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center !important;
+    }
+    /** SECTION CONTACTO HOME **/
+    .section-contacto-home{
+
+    }
+    /************/
+    /** CURSOS **/
+    /************/
+    /** DETALLE CURSO **/
+    .section-detalle-curso .elementor-col-33 .elementor-grid-tablet-2 .elementor-grid{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    /***************/
+    /** SERVICIOS **/
+    /***************/
+    /** SERVICIOS GENERALES **/
+    .section-servicios-grid{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    /** SECTION SERVICIO IMG/FORM 50% **/
+    .section-half-img-form .elementor-col-50:last-child .elementor-element-populated{
+        padding: 36px 40px 0px 40px !important;
+    }
+
+    /****************/
+    /** PREVENCION **/
+    /****************/
+    .elementor-14392 .elementor-element.elementor-element-6b59752c {
+        width: 100%;
+    }
+    /************/
+    /** BLOG **/
+    /************/
+    /** SINGLE POST **/
+    body.post-template-default .wf-container-main{
+        grid-column-gap: 30px !important;
+    }
+    .post.type-post .elementor-col-33 .elementor-grid-tablet-2 .elementor-grid{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    /************/
+    /** FOOTER **/
+    /************/
+    footer{
+        padding-top: 30px;
+    }
+    footer h3.elementor-icon-box-title{
+        font-size: 30px !important;        
+    }
+    footer p.elementor-icon-box-description{
+        font-size: 20px !important;  
+    }
+    footer .elementor-414 .elementor-element.elementor-element-c06754a {
+        width: 34% !important;
+    }
+}
+/** PORTRAIT 768px **/
+@media all and (min-width: 565px) and (max-width: 768px){
+    /** SLIDER HOME **/
+    body.home .elementor-10 .elementor-element.elementor-element-af1f873 .swiper-slide-inner {
+        padding: 0px 0px 0px 80px;
+        text-align: left;
+    }
+    /** NOTICIAS DESTACADAS HOME **/
+    .section-noticias-home{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-noticias-home .elementor-col-50{
+        width: 100%;
+    }
+    .section-noticias-home .elementor-col-50:first-child .elementor-element-populated{
+        padding: 0px 0px 40px 0px;
+    }
+    .section-noticias-home .portfolio-shortcode.resize-by-browser-width .dt-css-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-noticias-home .elementor-grid-1.elementor-grid-tablet-2 .elementor-widget-container {
+        margin-left: 0px;
+    }
+    .section-noticias-home .elementor-grid-1.elementor-grid-tablet-2 .elementor-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+    /** QUE HACE FEMPA HOME **/
+    .section-que-hace-fempa .responsive-iconbox h3{
+        margin-bottom: 30px;
+    }
+    .section-que-hace-fempa .elementor-widget-container .elementor-icon-box-wrapper{
+        align-items: end !important;
+    }
+    .section-que-hace-fempa .responsive-iconbox .elementor-col-66 .elementor-column-wrap{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .section-que-hace-fempa .box-blanco-icono .elementor-col-25{
+        width: 100%;
+    }
+    .section-que-hace-fempa .box-blanco-icono .elementor-col-25 .elementor-element-populated{
+        margin: 0px;
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    /** SECTION FEMPA OFRECE - FLIPBOX FOTO CON ICONO - HOME  **/
+    .section-fempa-ofrece{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .section-fempa-ofrece .elementor-col-33:last-child .elementor-element-populated{
+        margin-right: 0px !important;
+    }
+    /** SECTION SERVICIOS FEMPA - HOME **/
+    .section-servicios-home{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    /** SECTION PUBLICA TU OFERTA DE TRABAJO - HOME **/
+    .section-publica-oferta{
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .section-publica-oferta .elementor-col-50{
+        width: 100%;
+    }
+    .section-publica-oferta .elementor-col-50:last-child{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section-publica-oferta .elementor-col-50 .elementor-element-populated{
+        margin-top: 40px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px !important;
+    }
+    /** TITULO + BOTÓN CURSOS HOME**/
+    .section-titulo-cursos .elementor-col-66{
+        width: 100%;
+    }
+    .section-titulo-cursos .elementor-col-66 h2{
+        text-align: center;
+    }
+    /** SECTION ESCUELA DE FORMACION - HOME**/
+    .section-escuela-home .elementor-col-50{
+        width: 100%;
+    }
+    .section-escuela-home .order-foto{
+        order: 1;
+    }
+    .section-escuela-home .order-text{
+        order: 2;
+    }
+    /************/
+    /** CURSOS **/
+    /************/
+    /** DETALLE CURSO **/
+    .section-detalle-curso .elementor-col-66, .section-detalle-curso .elementor-col-33{
+        width: 100% !important;
+        padding-bottom: 40px;
+    }
+    .section-detalle-curso .elementor-col-66 .elementor-column-wrap, .section-detalle-curso .elementor-col-33 .elementor-column-wrap{
+        padding: 0px 0px 0px 0px !important;
+    }
+    .section-detalle-curso .elementor-col-33 .elementor-grid-tablet-2 .elementor-grid{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    /** SECTION EVENTOS + SOCIOS **/
+    .section-eventos-home{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .section-eventos-home .elementor-posts--skin-fempa-eventos-home {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-eventos-home .col-socios .elementor-image-box-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center !important;
+    }
+    /***************/
+    /** SERVICIOS **/
+    /***************/
+    .section-half-img-form .elementor-col-50{
+        width: 100%;
+    }
+    .section-half-img-form .elementor-col-50:last-child .elementor-element-populated{
+        padding: 40px 80px 40px 80px !important;
+    }
+    /************/
+    /** BLOG **/
+    /************/
+    /** CATEGORIIA **/
+    .archive.category .articles-list .wf-td{
+        width: 100% !important;
+        display: block !important;
+    }
+    .archive.category .articles-list .blog-content{
+        padding-left: 0px !important;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    /** SINGLE POST **/ 
+    .post.type-post .elementor-col-66, .post.type-post .elementor-col-33{
+        width: 100% !important;
+        padding-bottom: 40px;
+    }  
+    .post.type-post .elementor-col-66 .elementor-column-wrap, .post.type-post .elementor-col-33 .elementor-column-wrap{
+        padding: 0px 0px 0px 0px !important;
+    }
+    .post.type-post .elementor-col-33 .elementor-grid-tablet-2 .elementor-grid{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .section-contamos-mas .swiper-slide-inner{
+        padding: 0 50px !important;
+    }
+    /************/
+    /** EMPLEO **/
+    /************/
+    .elementor-15366 .elementor-element.elementor-element-55f828f0 {
+        width: 100%;
+    }
+    /**************/
+    /** CONTACTO **/
+    /**************/
+    .fempa-form .elementor-col-50{
+        width: 100%;
+    }
+    .section-mapa .elementor-col-50{
+        width: 100%;
+    }
+    .section-mapa .elementor-col-50:first-child{
+        order: 2;
+    }
+    /************/
+    /** FOOTER **/
+    /************/
+    footer h3.elementor-icon-box-title{
+        font-size: 30px !important;        
+    }
+    footer p.elementor-icon-box-description{
+        font-size: 20px !important;  
+    }
+    footer .elementor-element-4525955 .elementor-row{
+        justify-content: center;
+    }
+    footer .news-letter{
+        width: 44% !important;
+    }
+    footer .elementor-414 .elementor-element.elementor-element-9f8de1d {
+        width: 47%;
+    }
+    footer .elementor-414 .elementor-element.elementor-element-c06754a {
+        width: 80% !important;
+    }
+    footer .footer-corporativo .elementor-col-20:first-child{
+        width: 100%;
+    }
+    footer .footer-corporativo .elementor-col-20:first-child .elementor-element{
+        text-align: center;        
+    }
+    footer .footer-corporativo .elementor-col-20:first-child .elementor-icon-box-wrapper{
+        text-align: left;   
+        max-width: 377px;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    footer .footer-corporativo .elementor-col-20:first-child .elementor-widget-social-icons{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    footer .footer-corporativo .elementor-col-20:not(:first-child) {
+        width: 25%;
+    }
+    footer .fila-subvenciones .elementor-col-20:first-child{
+        width: 100%;
+    }
+    footer .fila-subvenciones .elementor-col-20:first-child .elementor-element{
+        text-align: center;        
+    }
+    footer .fila-subvenciones .elementor-col-20:not(:first-child) {
+        width: 25%;
+    }
+    footer .bottom-bar .elementor-col-50{
+        width: 100% !important;
+    }
+    footer .bottom-bar .elementor-col-50 .elementor-widget-container .elementor-text-editor{
+        text-align: center;
+    }
+    footer .bottom-bar .elementor-col-50:last-child .elementor-widget-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*_Mensaje en formulario_*/
+
+.elementor-message {
+    margin-bottom: 0!important;
+}
+
+
+/*Lupa*/
+
+@media only screen and (max-width: 450px) {
+    #page .masthead .popup-search .popup-search-wrap {
+        transform: translate3d(-28%, 0, 0);
+    }
+}
+
+
+/*_Menu slider_*/
+
+.menu-side .elementor-icon-box-icon {
+    margin-top: 6px;
+}
+
+.menu-item-object-servicio a {
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+@media only screen and (max-width:767px){
+	.elementor-pagination{
+		text-align: center !important;
+	}
+    .footer-navs .elementor-item{
+        justify-content: center !important;
+        text-align: center;
+    }
+    .footer-nav-header.down .elementor-heading-title::after{
+        content: '\f107';
+    }
+    .footer-nav-header .elementor-heading-title::after{
+        font-family: "Font Awesome 5 Free";
+        content: "\f106";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        margin-left: 20px;
+    }
+
+}
+
+.articles-list .fancy-categories a:nth-of-type(n+5) {
+    display: none;
+}
+.articles-list .fancy-categories.more-than-four::after{
+    content: "+";
+    background-color: #094F73 !important;
+    padding: 4px 11px;
+    text-transform: uppercase;
+    font-family: "Titillium Web";
+    color: #fff;
+    font: 700 22px/22px Arial,Verdana,sans-serif;
+}
+.entry-meta.modalidad{
+    font-size: 16px;
+    line-height: 24px;
+}
+.entry-meta.modalidad .fas{
+    color: #48CC5C;
+    width: 11px;
+    height: 17px;
+    font-size: 18px;
+}
+#section-fempa-ofrece-dots .active  .elementor-icon-list-icon i {
+    font-size: 10px;
+}
+
+.template-cta-noticias .elementor-template {
+    margin-top: 50px;
+    margin-bottom: -90px;
+}
