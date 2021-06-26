@@ -1,0 +1,131 @@
+jQuery(document).ready( function($){
+    $('#menu-button').click(() => $('#nav-servicio-mobile').toggle());
+
+    let parent = $('.nav-servicio .menu-item-has-children ul .elementor-item-active').parents('ul').siblings("a");
+    parent.attr('style','font-weight: bold;')
+    parent.prepend('<i class="dt-icon-the7-arrow-552" style="color: #094F73; margin-left: -3px; transform: scale(1.3);"></i>');
+    parent.siblings('ul').attr('style',"width: auto; display: block;");
+    if(parent.length == 0){
+        $('.nav-servicio .elementor-item-active').prepend('<i class="dt-icon-the7-arrow-552" style="color: #094F73; margin-left: -3px; transform: scale(1.3);"></i>');
+    }
+
+    if($('#available-posts').length){
+        $('#no-result').css("display", "none");
+    }
+    if($('#available-posts').length == 0){
+        $('.has-result').each((index, value) => $(value).css("display", "none"));
+    }
+    if($('#available-posts').length){
+        $('.no-result').each((index, value) => $(value).css("display", "none"));
+    }
+    if($('.elementor-form').length){
+        $('.elementor-form').on('submit_success', function set_data_default(event, response){
+            var form = this;
+            $(form).on('reset', function(event) {
+                setTimeout( function() {
+                    let datos = response.data;
+                    for(var key in datos){
+                        let $campo = $(form).find('[name="form_fields['+key+']"]');
+                        let value_data =datos[key];
+                        if($campo.length>0){
+                            switch ($campo.prop("tagName").toLowerCase()) {
+                                case 'input':
+                                    switch ($campo.attr('type')) {
+                                        case 'checkbox':
+                                            $($campo).prop('checked',!!value_data);
+                                            break;
+                                        case 'radio':
+                                            if($($campo).val() == value_data){
+                                                $($campo).prop('checked',true);
+                                            } else{
+                                                $($campo).prop('checked',false);
+                                            }
+                                            break;
+                                        default:
+                                            $($campo).val(value_data);
+                                            break;
+                                    };
+                                break;
+                                case 'select':
+                                    $($campo).find("option[value="+value_data+"]").attr('selected','selected');
+                                    break;
+                                case 'textarea':
+                                    $($campo).text(value_data);
+                                    break;
+                            default:
+                                break;
+                            };
+                        }
+                   }
+                },1);
+             
+            });
+        });
+    }
+    if($('.lista-cursos')){
+        $textos_vacios = $('.lista-cursos .elementor-icon-list-text:empty').toArray();
+        if($($textos_vacios).length>0){
+            $($textos_vacios).each((index, element) => {
+                $(element).parent().attr('style','display:none;');
+            });
+        }
+    }
+    $('.articles-list .fancy-categories').each(function() {
+        if($(this).find('a:last-child').css("display") == "none"){
+            $(this).toggleClass('more-than-four');
+        }
+    });
+    $('.footer-nav-header').each(function() {
+        $(this).on('click', function() {
+            let newWindowWidth = $(window).width();
+            if (newWindowWidth < 767) {
+                $(this).toggleClass('down')
+                $(this).siblings().first().toggle();
+                if($(this).attr("id")=='footer-cursos-primer-menu'){
+                    $('#footer-cursos-segundo-menu').toggle();
+                }
+            }
+        })
+        $(this).trigger('click');
+    });
+    if(!(!!$('body.elementor-editor-active').length) &&$('#section-fempa-ofrece .elementor-row')){
+        var slider_actual = null;
+        var li =$('#section-fempa-ofrece-dots ul li').get(0);
+        $('#section-fempa-ofrece .elementor-row').children().each(function() {
+            if (slider_actual == null) {
+                slider_actual = this;
+            }else{
+                $(li).clone().appendTo($('#section-fempa-ofrece-dots ul'));
+            }
+            if (slider_actual != this) {
+                $(this).toggle();
+            }
+        });
+        $(li).toggleClass('active');
+        $('#section-fempa-ofrece-dots ul li').each(function(index){
+            $(this).data('silder-index',index);
+
+            $(this).on('click', function() {
+                $('#section-fempa-ofrece-dots .active').toggleClass('active');
+                let children = $($('#section-fempa-ofrece .elementor-row')).children();
+                $(slider_actual).toggle();
+                let actual_index = $(this).data('silder-index');
+                slider_actual =children.eq(actual_index);
+                $(slider_actual).toggle();
+                $(this).toggleClass('active');
+            });
+        });
+        var slidetimer = 5000;
+
+        $('#section-fempa-ofrece').on('click', function() {
+            let children = $($('#section-fempa-ofrece .elementor-row')).children();
+            let actual_index = children.index(slider_actual);
+            actual_index++;
+            if(actual_index == children.length){
+                actual_index = 0;
+            }
+            li =$('#section-fempa-ofrece-dots ul li').get(actual_index);
+            $(li).trigger('click');
+        });
+    }
+});
