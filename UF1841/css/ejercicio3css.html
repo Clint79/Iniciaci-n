@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>  
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-
+        <style>
+            .tabla1{
+                border: solid 1px black;
+            }
+            .tabla1 input:first-child{
+                background-color: rgb(190, 189, 189);
+                width: 500px; height: 40px;
+                margin: 1px -2px 1px 1px;
+            }
+            .tabla1 input:last-child{
+                width: 100px; height: 40px;
+                margin: 1px 1px 1px -2px;
+            }
+        </style>
     </head>
 
     <body>
-
         <div>
-
             <table>
                 <tr>
-                    <td style="border: solid 1px black;"><img src="../css/Nueva carpeta/logoelcorteingles.png"></td>
-                    <td style="border: solid 1px black;"><input type="search" name="buscar" placeholder="Buscar...." style="background-color: rgb(190, 189, 189); width: 500px; height: 40px;"><input type="submit" value="Buscar" style="width: 100px; height: 40px;"></td>
+                    <td class="tabla1"><img src="../css/Nueva carpeta/logoelcorteingles.png"></td>
+                    <td class="tabla1">
+                        <input type="search" name="buscar" placeholder="Buscar....">
+                        <input type="submit" value="Buscar">
+                    </td>
                 </tr>
             </table>
-
-
         </div>
 
         <div style=" margin-left: 800px;">
 
-            <table style="border-spacing: 30px;">
+            <table id="tabla1" style="border-spacing: 30px;">
                 <tr>
                     <th style="border: solid 2px orange; color: orange; text-align: center;">Envio en 2 Horas</th>
                     <th style="border: solid 2px blue; color: blue; text-align: center;">48 H</th>
@@ -68,14 +78,14 @@
 
             <table style="border-spacing: 30px;">
                 <tr>
-                    <th style="border: solid 2px orange; color: orange; text-align: center;">Envio en 2 Horas</th>
-                    <th style="border: solid 2px blue; color: blue; text-align: center;">48 H</th>
-                    <th style="border: solid 2px orange; color: orange; text-align: center;">Envio en 2 Horas</th>
-                    <th style="border: solid 2px blue; color: blue; text-align: center;">48 H</th>
-                    <th style="border: solid 2px orange; color: orange; text-align: center;">Envio en 2 Horas</th>
-                    <th style="border: solid 2px blue; color: blue; text-align: center;">48 H</th>
-                    <th style="border: solid 2px orange; color: orange; text-align: center;">Envio en 2 Horas</th>
-                    <th style="border: solid 2px blue; color: blue; text-align: center;"> 48 H</th>
+                    <th class="envio" style="border: solid 2px orange; color: orange; text-align: center;">Envio en 2 Horas</th>
+                    <th class="envio" style="border: solid 2px blue; color: blue; text-align: center;">48 H</th>
+                    <th class="envio" style="border: solid 2px orange; color: orange; text-align: center;">Envio en 2 Horas</th>
+                    <th class="envio" style="border: solid 2px blue; color: blue; text-align: center;">48 H</th>
+                    <th class="envio" style="border: solid 2px orange; color: orange; text-align: center;">Envio en 2 Horas</th>
+                    <th class="envio" style="border: solid 2px blue; color: blue; text-align: center;">48 H</th>
+                    <th class="envio" style="border: solid 2px orange; color: orange; text-align: center;">Envio en 2 Horas</th>
+                    <th class="envio" style="border: solid 2px blue; color: blue; text-align: center;"> 48 H</th>
                 </tr>
                 <tr>
                     <td colspan="2"><img src="../css/Nueva carpeta/img1.jpg"></td>
@@ -96,18 +106,13 @@
                     <td colspan="2" style="font-weight: bold;">FITBIT</td>
                 </tr>
                 <tr>
-                    <td colspan="2">149,95€</td>
-                    <td colspan="2">159€</td>
-                    <td colspan="2">159€</span></td>
-                    <td colspan="2">219,95€</td>
-                    
+                    <td class="precio" colspan="2">149,95€</td>
+                    <td class="precio" colspan="2">159€</td>
+                    <td class="precio" colspan="2">159€</span></td>
+                    <td class="precio" colspan="2">219,95€</td>
                 </tr>
             </table>
-
         </div>
-
         <hr>
-    
     </body>
-
 </html>
