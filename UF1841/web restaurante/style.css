@@ -1,0 +1,200 @@
+.logo{
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 200px;
+}
+li{
+    display: inline;
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px 20px 10px 20px;
+    padding: 10px;
+}
+body{
+   margin-left: auto;
+   margin-right: auto;
+}
+ul{
+    text-align: center;
+}
+.navegador{
+    text-decoration: none;
+    color: #CEAFEC;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;                
+}
+.navegador:hover{
+    color: #265DFC;
+    cursor: pointer;
+}
+.navegador:hover, a:focus {
+    background-size: 100% 2px;
+}
+footer{
+    background-color: #CEAFEC;
+   
+                         
+}
+.enlacestexto{
+    color: #868A2D;
+    text-decoration: none;
+    margin:auto
+}
+.direccion{
+    text-decoration: none;
+    color: #868A2D;
+    margin: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+main{
+    height: 600px;
+    border-radius: 60px;
+    height: auto;
+}          
+.tabla, th, td{
+    border:solid #ffffff 2px;
+    border-spacing: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    height: 40px; 
+    color: #868A2D; 
+    font-weight: 200; 
+}
+.titulotabla{
+    margin: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #868A2D;
+}
+.diviframe{
+        float: right;
+        margin-top: 200px;
+        text-align: center;
+        position: relative;
+        transform:translateX(50%);
+        bottom: 100px;
+}
+.logo{
+        display: block;
+        margin-left: auto; 
+        margin-right: auto;
+}
+li{
+    display: inline;
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px 20px 10px 20px;
+    padding: 10px;
+}
+
+ul{
+    text-align: center;
+}
+.navegador{
+    text-decoration: none;
+    color: #CEAFEC;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;                
+}
+.navegador:hover{
+    color: #265DFC;
+    cursor: pointer;
+}
+.navegador:hover, a:focus {
+    background-size: 100% 2px;
+}
+ 
+
+.enlacestexto{
+    color: #868A2D;
+    text-decoration: none;
+    margin:auto
+}
+.direccion {
+    text-decoration: none;
+    color: #868A2D;
+    margin: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+main{
+    height: 600px;
+    border-radius: 60px;
+    height: 1800px;
+}          
+.tabla, th, td{
+    border:solid #ffffff 2px;
+    border-spacing: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    height: 40px; 
+    color: #868A2D;  
+}
+.titulotabla{
+    margin: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #868A2D;
+}
+.diviframe{
+        float: right;
+        margin-top: 200px;
+        text-align: center;
+        position: relative;
+        transform:translateX(50%);
+        bottom: 100px;
+}
+.home{
+       width: 100%;
+}
+h1{
+        text-align: center;
+        background-size: 100%;
+        border-radius: 100px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 300;
+        color: #a6b3dd;
+        font-size: 60px;
+        margin-bottom: 30px;      
+}
+.imgluces{
+        margin-top: 50px;
+        border-radius: 60px;
+}
+.phome1{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 600px;
+        height: 100px;
+
+}
+.textoGrande{
+    padding: 50px 30px;
+    font-size: 30px;
+}
+
+footer{
+    background-color: violet;
+    padding: 30px 10px;
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footerCol{
+    width: 32%;
+    float: left;
+}
+.td1{
+    width: 50%;
+}
+.imghome{
+    border-radius: 20px;
+}
+   

@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Restaurante Talosi</title> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <title>Restaurante Talosi - Carta</title> 
         <style>
             .logo{
                 display: block;
@@ -72,9 +75,7 @@
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             }
             main{
-                height: 600px;
-                background: rgb(255, 171, 171);
-                border-radius: 60px;
+                height: auto;
             }          
             .tabla, th, td{
                 border:solid #ffffff 2px;
@@ -98,6 +99,57 @@
                     transform:translateX(50%);
                     bottom: 100px;
                 }
+                h1{
+                    text-align: center;
+                    font-size: 40px;
+                    font-weight: 100;
+                    color: rgb(196, 195, 231);
+                }
+            .img1, .img2, .img3{
+                float: left;
+                width: 33.33%;
+                padding-top: 50px;
+            }
+        
+            .tablecarta{
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 20px;
+                width: 100%;
+                border: solid 1px gold;
+            }
+            .thcarta{
+                font-size: 30px;
+            
+            }
+            .tdcarta{
+                text-align: center;
+                font-size: 25px;
+            }
+            h2{
+                font-size: 30px;
+                color: rgb(196, 195, 231);
+                text-align: center;
+
+            }
+            h1, h2{
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .tablepostre{
+                float: left;
+                width: 50%;
+                
+            }
+            .imgpostre{
+                float: left;
+                width: 50%;
+                height: 500px;
+            }
+            .divvinos{
+                background-image: url(img/vino.jpg);
+                height: 500px;
+            }
         </style>    
     </head>
     <body>
@@ -116,7 +168,93 @@
             </div>
         </header>
         <main>
-                       
+             <div>
+                 <h1>Te presentamos nuestra carta, esperamos que te guste</h1>
+                 <h2>Platos principales</h2>
+                <img class="img1" src="img/plato1.jpg">
+                <img class="img2" src="img/plato2.jpg">
+                <img class="img3" src="img/plato3.jpg">
+            </div>
+            <div class="divcarta">
+                <table class="tablecarta">
+                    <tr>
+                        <th class="thcarta">Ensaladas</th>
+                        <th class="thcarta">Primer plato</th>
+                        <th class="thcarta">Segundo plato</th>
+                    </tr>
+                    <tr>
+                        <td class="tdcarta">Ensalada 1</td>
+                        <td class="tdcarta">Primer plato1</td>
+                        <td class="tdcarta">Segundo plato1</td>
+                    </tr>
+                    <tr>
+                        <td class="tdcarta">ensalada 2</td>
+                        <td class="tdcarta">Primer plato3</td>
+                        <td class="tdcarta">Segundo plato3</td>
+                    </tr>
+                    <tr>
+                        <td class="tdcarta">Ensalada 3</td>
+                        <td class="tdcarta">Primer plato3</td>
+                        <td class="tdcarta">Segundo plato3</td>
+                    </tr>
+                    <tr>
+                        <td class="tdcarta">Ensalada 4</td>
+                        <td class="tdcarta">Primer plato4</td>
+                        <td class="tdcarta">Segundo plato4</td>
+                    </tr>
+                    <tr>
+                        <td class="tdcarta">Ensalada 5</td>
+                        <td class="tdcarta">Primer plato5</td>
+                        <td class="tdcarta">Segundo plato5</td>
+                    </tr>
+                </table>
+             </div> 
+            <div>
+             <h2>Postres</h2> 
+             <table class="tablepostre">
+                <tr>
+                    <th class="thcarta">Postres</th>
+                    
+                </tr>
+                <tr>
+                    <td class="tdcarta">Postre 1</td>
+                    
+                </tr>
+                <tr>
+                    <td class="tdcarta">Postre 2</td>
+                    
+                </tr>
+                <tr>
+                    <td class="tdcarta">Postre 3</td>
+                    
+                </tr>
+                <tr>
+                    <td class="tdcarta">Postre 4</td>
+                    
+                </tr>
+                <tr>
+                    <td class="tdcarta">Postre 5</td>
+                    
+                </tr>
+                <tr>
+                    <td class="tdcarta">Postre 6</td>
+                    
+                </tr>
+                <tr>
+                    <td class="tdcarta">Postre 7</td>
+                    
+                </tr>
+                <tr>
+                    <td class="tdcarta">Postre 8</td>
+                    
+                </tr>
+            </table>
+            <img class="imgpostre" src="img/postre.jpg">
+        </div> 
+        <div >
+             <h2>Carta de vinos y otras bebidas</h2>  
+             <div class="divvinos"></div>
+        </div>     
         </main>
     </body>
     <footer>

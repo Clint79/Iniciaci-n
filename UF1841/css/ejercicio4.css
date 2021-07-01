@@ -1,0 +1,22 @@
+body{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+p{
+    color: yellow;
+    font-size: 40px;
+    border: solid 1px green;
+    background-color: grey;
+    font-size: 30px;
+    transition: all;
+    transition-duration: 3s;
+}
+p:hovefor{
+    transition: all;
+    font-size: 10px; 
+}
+.gg-camera{
+    background-color: blue;
+}
+.gg-film{
+    background-color: yellow;
+}

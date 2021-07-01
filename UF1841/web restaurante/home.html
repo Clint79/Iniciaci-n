@@ -1,155 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Restaurante Talosi</title> 
-        <style>
-            .logo{
-                display: block;
-                margin-left: auto; 
-                margin-right: auto;
-            }
-            li{
-                display: inline;
-                font-size: 30px;
-                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                margin: 10px 20px 10px 20px;
-                padding: 10px;
-            }
-            body{
-               width: 60%;
-               margin-left: auto;
-               margin-right: auto;
-            }
-            ul{
-                text-align: center;
-            }
-            .navegador{
-                text-decoration: none;
-                color: #CEAFEC;
-                background-image: linear-gradient(currentColor, currentColor);
-                background-position: 0% 100%;
-                background-repeat: no-repeat;
-                background-size: 0% 2px;
-                transition: background-size .3s;                
-            }
-            .navegador:hover{
-                color: #265DFC;
-                cursor: pointer;
-            }
-            .navegador:hover, a:focus {
-                background-size: 100% 2px;
-            }
-            footer{
-                background-color: #CEAFEC;
-                display: flex;
-                border-radius:60px ;                             
-            }
-            .footer1{               
-                margin-top: 200px;
-                text-align: center;
-                position: relative;            
-                bottom: 100px;
-                transform: translateX(10%);                
-            }
-            .footer2{           
-                margin-top: 100px;
-                text-align: center;
-                position: relative; 
-                transform: translateX(15%);
-            }
-            .enlacestexto{
-                color: #868A2D;
-                text-decoration: none;
-                margin:auto
-            }
-            .direccion {
-                text-decoration: none;
-                color: #868A2D;
-                margin: auto;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            }
-            main{
-                height: 600px;
-                background: rgb(255, 171, 171);
-                border-radius: 60px;
-            }          
-            .tabla, th, td{
-                border:solid #ffffff 2px;
-                border-spacing: 0px;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 20px;
-                height: 40px; 
-                color: #868A2D;  
-            }
-            .titulotabla{
-                margin: 20px;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 30px;
-                color: #868A2D;
-            }
-            .diviframe{
-                    float: right;
-                    margin-top: 200px;
-                    text-align: center;
-                    position: relative;
-                    transform:translateX(50%);
-                    bottom: 100px;
-                }
-        </style>    
-    </head>
-    <body>
-        <header>
-            <did>
-                <a href="home.html"><img class="logo" alt="Restaurante Talosi" src="../web restaurante/img/logotiny.png"></a>
-            </did>
-                <nav class="menu">
-                    <ul>
-                        <li><a class="navegador" href="home.html">Restaurante Talosi</a></li>
-                        <li><a class="navegador" href="carta.html">Carta</a></li>
-                        <li><a class="navegador" href="contacto.html">Contacto</a></li>
-                        <li><a class="navegador" href="trabajo.html">Trabaja con nosotros</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-                       
-        </main>
-    </body>
-    <footer>
-        <div class="footer1">
-            <img width="200px" src="../web restaurante/img/logotiny.png">
-            <br>
-            <br>
-            <p class="direccion"><a class="enlacestexto" href="midereccion@gmail.com">midereccion@gmail.com</a></p>
-            <p class="direccion">Restaurante Tolosi</p>
-            <p class="direccion">Benito Velcibuelles 45, 28080 Madrid</p>
-            <p class="direccion">Abiertos cuando no hemos cerrado</p>
-        </div>  
-        <div class="footer2">
-            <table class="tabla">
-                <caption class="titulotabla">Horario de apertura</caption>
-                <tr>
-                    <th>De Lunes a Viernes</th>
-                    <th>Sabados, Domingos y festivos</th>
-                </tr>
-                <tr>
-                    <td>Cuando no esta cerrado</td>
-                    <td>Igual que de Lunes a Viernes</td>
-                </tr>
-            </table>
-            <br>
-            <br>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Talosi - Home</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+
+        <a href="home.html"><img class="logo" alt="Restaurante Talosi" src="../web restaurante/img/logotiny.png"></a>
+
+        <nav class="menu">
+            <ul>
+                <li><a class="navegador" href="home.html">Restaurante Talosi</a></li>
+                <li><a class="navegador" href="carta.html">Carta</a></li>
+                <li><a class="navegador" href="contacto.html">Contacto</a></li>
+                <li><a class="navegador" href="trabajo.html">Trabaja con nosotros</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div class="divimghome">
+            <img class="home" src="../web restaurante/img/home.jpg">
+        </div>
+        <h1>Restaurante Talosi</h1>
+
+        <table style="width: 100%;">
+            <tr>
+                <td class="td1">
+                    <img class="imghome" src="img/luces.jpg" style="width: 100%;" />
+                </td>
+                <td>
+                    <div class="textoGrande">
+                        "Descubre sabores que nunca has probado en el restaurante más vanguardista de la ciudad.
+                        Talosi une modernidad en la cocina con un ambiente casero y relajado donde pasarás unos momentos
+                        que no olvidarás jamás."
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+</body>
+
+<footer>
+
+    <div class="footerCol">
+        <img width="200px" src="../web restaurante/img/logotiny.png">
+        <br>
+        <br>
+        <p class="direccion"><a class="enlacestexto" href="midereccion@gmail.com">midereccion@gmail.com</a></p>
+        <p class="direccion">Restaurante Tolosi</p>
+        <p class="direccion">Benito Velcibuelles 45, 28080 Madrid</p>
+        <p class="direccion">Abiertos cuando no hemos cerrado</p>
+    </div>
+
+    <div  class="footerCol">
+        Horario de apertura
+        <div>De Lunes a Viernes</div>
+        <div>Cuando no esta cerrado</div>
+        <div>Igual que de Lunes a Viernes</div>
+        <br>
+       <div>
             <p class="direccion"><a class="enlacestexto" href="home.html">Restaurante Talosi</a></p>
             <p class="direccion"><a class="enlacestexto" href="carta.html">Carta</a></p>
             <p class="direccion"><a class="enlacestexto" href="ccontacto.html">Contacto</a></p>
             <p class="direccion"><a class="enlacestexto" href="trabajo.html">Trabaja con nosotros</a></p>
         </div>
-        <div class="diviframe">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15109.215219353879!2d-115.82277408351202!3d37.24008530662563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b81baaba3e8c81%3A0x970427e38e6237ae!2s%C3%81rea%2051%2C%20Nevada%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1624984738585!5m2!1ses!2ses" width="250" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>          
-        </div>       
-    </footer>
+    </div>
+    <div  class="footerCol">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15109.215219353879!2d-115.82277408351202!3d37.24008530662563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b81baaba3e8c81%3A0x970427e38e6237ae!2s%C3%81rea%2051%2C%20Nevada%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1624984738585!5m2!1ses!2ses"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</footer>
+
+
 </html>

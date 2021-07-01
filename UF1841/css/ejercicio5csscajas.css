@@ -1,0 +1,35 @@
+.caja1, .caja2, .caja3{
+    background-color: purple;    
+    width: 33.33%;
+    height: 120px;
+    float: left;
+}
+
+.caja4{
+    color: white;
+    background-color: black;
+    height: 120px;
+    width: 100%;
+    clear: both;
+    
+}
+.caja5{
+    background-color: blue;
+    width: 33.33%;
+    height: 120px;
+    float: left;
+}
+.caja6{
+    height: 120px;
+    float: left;
+    background-color: pink;
+    width: 33.33%;
+    clear: both;
+}
+.caja7, .caja8{
+    background-color: pink;
+    width: 33.33%;
+    float: left;
+    height: 120px;
+
+}
