@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+        .fondogris{
+            background-color: gray;
+        }
+        </style>
+
+    </head>
+
+    <body>
+
+        <script>
+
+            //Ejercicio tabla
+
+            document.write("<table border='1'>");
+
+            for(var y = 1; y <= 100; y++) {
+                    if( y  % 2 ==  0) {
+                        document.write("<tr class='fondogris'>");
+
+                        }else{ 
+                    
+                        document.write("<tr>");
+                        }
+                        document.write("<td>1</td>");
+                        document.write("<td>2</td>");
+                        document.write("</tr>");
+                }
+
+            document.write("</table>");
+            
+        </script>
+    
+    </body>
+
+</html>

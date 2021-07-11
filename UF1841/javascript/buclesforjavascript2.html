@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <script>
+
+            //15. Realiza un programa que muestre en pantalla los números del 1 al 100 usando un bucle For. (debe aparecer un número en cada línea de la pantalla)
+
+
+           /*  for ( var n=0; n<=100; n=n+1){
+                document.write("<br>"+ n);
+            } */
+
+
+
+            //16. Realiza un programa que muestre en pantalla los números PARES del 1 al 100 usando un bucle For. (los números pares son divisibles entre 2 → número % 2 == 0)
+
+            /* for (var n=1; n<=100; n++){
+                if (n % 2 == 0){
+                    document.write("<br>" + n)
+                }
+            } */
+
+
+
+            //17. Realiza un programa que muestre en pantalla los números IMPARES del 1 al 100 usando un bucle For. (los números impares no son divisibles entre 2 → número % 2 != 0)
+
+            /* for (var n=1; n<=100; n++){
+                if (n % 2 !== 0){
+                    document.write("<br>" + n)
+                }
+            } */
+
+
+
+            //18. Realiza un programa que sume los números del 1 al 100 y muestre el resultado por pantalla
+
+            /* let acumulado=0
+
+            for (let n=1; n<=100; n++){
+                acumulado = acumulado + n   
+            }
+            console.log(acumulado);
+            document.write(acumulado) */
+            
+
+
+            //19. Utiliza un bucle for para imprimir por la consola la tabla de multiplicar del 8
+
+            /* for (n=1; n<=10; n++){
+                document.write(8  + "x" + n  + "=" + n * 8 + " <br>")
+                console.log(8 + "x" + n  + "=" + n * 8)
+            } */
+
+
+
+            //20. Construye y muestra por consola un "triángulo" de 7 líneas como el siguiente
+
+            /* let suma="*"                       //no funciona 
+
+            for (n=1; n<=7; n++){
+                suma = suma + n
+                document.write(suma + "<br>");
+                console.log(suma + "<br>")
+            } */
+
+
+            /* for (let n = 0; n <=6; n++) {      //si funciona
+                let piso = '';
+                for ( let m = 0; m < n + 1; m++) {
+                    piso = piso + '*';
+                }
+            console.log(piso);
+            document.write(piso + "<br>");
+            } */
+
+
+            /* var asterisco = "*";            //De Juan Carlos, Funciona
+            for(var n=1 ; n<=7 ; ++n){
+                console.log(asterisco);
+                asterisco = asterisco + "*";
+            } */
+
+
+
+            // 21. Muestra los números múltiplos de 5 de 0 a 100 utilizando un bucle for
+
+            /* for (let n = 1; n <=100; n++) {
+                if (n % 5 == 0) {
+                    document.write(n + "<br>")
+                    console.log(n)
+                }
+            } */
+            
+
+
+            //22. Muestra los números del 320 al 160, contando de 20 en 20 hacia atrás utilizando un bucle for
+
+            
+            /* for ( let n = 320; n >=160; n = n - 20) {
+                console.log("cuenta atrás desde 320" + n);
+                document.write(n + "<br>")
+            } */
+
+
+
+            //23. Muestra los números del 100 al 1 separando cada número por el símbolo “-“.
+
+            /* for ( let n = 1; n <= 100; n++) {
+                console.log(n + "-");
+                document.write(n + "-");
+            } */
+               
+
+
+            //24. Escribe un programa que lea un número N e imprima una pirámide de números con N filas como en la siguiente figura:
+
+                                                     /* 1
+                                                        12
+                                                        123
+                                                        1234 */
+
+               
+                /* let suma = ""
+
+                for (let n=1; n <= 3+1; n = n + 1) {
+                    suma = suma + n;
+                    document.write(suma + "<br>")
+                } */
+
+
+
+            //25. Escribe un programa que lea un número N e imprima una pirámide de números con N filas como en la siguiente figura
+
+                                                          /*1
+                                                           121
+                                                          12321
+                                                         1234321*/
+
+                
+                
+
+                /* for (let y = 1; y <=4; y++) {
+                    for( let x = 1; x <= 7; x++) {
+                        if (y === 1 && x !==4){
+                            document.write("&nbsp");
+                            }else if (y === 1 && x == 4) {
+                                document.write(1);
+                            } 
+                            if ( y === 2 && (x !==3 && x !==4 && x !==5)){
+                                document.write("&nbsp");
+                            }else if (y === 2 && ( x === 3 || x === 5)) {
+                                document.write(1);
+                            }else if (y === 2 && x === 4){
+                                document.write(2);
+                            }
+                            if ( y === 3 && (x !==2 && x !==3 && x !==4 && x !==5 && x !==6)){
+                                document.write("&nbsp");
+                            }else if ( y === 3 && ( x ===2 || x ===6)) {
+                                document.write(1);
+                            }else if ( y ===3 && ( x ===3 || x ===5)) {
+                                document.write(2);
+                            }else if ( y ===3 && ( x ===4)) {
+                                document.write(3);
+                            }
+                            if ( y === 4 && ( x ===1 || x ===7)) {
+                                document.write(1);
+                            }else if ( y ===4 && ( x ===2 || x ===6)) {
+                                document.write(2);
+                            }else if ( y ===4 && ( x ===3 || x ===5)) {
+                                document.write(3);
+                            }else if ( y ===4 && ( x ===4)) {
+                                document.write(4);
+                            }
+                        }  
+                        document.write("<br>")   
+                        } */
+                 
+
+                            //Modo de Juan Carlos -Centrado con CSS-
+
+                            /* altura =parseInt(prompt("Indica la altura"));
+        
+                            for(var numero=1 ; numero<=altura ; numero++){
+                                document.write("<div>")
+                                for(linea=1 ; linea<=numero ;linea++){
+                                document.write(linea);
+                            }
+            
+                            for(linea=numero ; linea>1 ;linea--){
+                            document.write(linea-1);
+                            }
+                                document.write("</div>")
+                            } */
+
+
+        </script>
+    
+    </body>
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+
+            td{
+                width: 100px;
+                height: 100px;
+            }
+
+            .celdanegra{
+                background-color: black;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <script>
+
+            //28. Realiza un programa que muestre en pantalla los números del 1 al 100 usando un bucle while. (debe aparecer un número en cada línea de la pantalla)
+
+            /* var n = 1;
+            while (n <= 100) {
+                document.write(n + "<br>");
+                n++
+            } */
+        
+
+
+            //29. Realiza un programa que muestre en pantalla los números PARES del 1 al 100 usando un bucle while. (los números pares son divisibles entre 2 → número % 2 == 0)
+
+            /* var  n = 0;
+            while (n <= 100) {
+                if(n % 2 == 0) {
+                    document.write(n + "<br>");
+                }
+               n++;
+            } */ 
+
+
+
+            //30. Realiza un programa que muestre en pantalla los números IMPARES del 1 al 100 usando un bucle while. (los números impares no son divisibles entre 2 → número % 2 != 0)
+
+            /* var n = 0;
+            while (n <= 100) {
+                if(n % 2 !== 0) {
+                    document.write(n + "<br>");
+                }
+                n++;
+            } */
+
+
+
+            //31. Realiza un programa que sume los números del 1 al 100 y muestre el resultado por pantalla
+
+            /* var suma = 0;
+            var n = 1;
+            while (n <=100) {
+                suma = suma + n;
+                n++;
+            }
+                document.write(suma);
+                console.log(suma); */
+
+
+
+            //32. Utiliza un bucle while para imprimir por la consola la tabla de multiplicar del 8
+
+            /* var n = 0;
+            while (n <= 9) {              
+                n++;
+                document.write(8 + "x" + n + "=" + n * 8 + "<br>");
+            } */
+
+
+
+            //33. Construye y muestra por consola un "triángulo" de 7 líneas como el siguiente:
+
+            /* var n = 0;
+            var suma = "";
+            while (n <=7) {
+                suma = suma + "*"
+                n++;
+                document.write(suma + "<br>");
+            } */
+            
+
+
+            //34. Escribe un programa que calcule la media de un conjunto de números positivos introducidos por teclado. A priori, el programa no sabe cuántos números se introducirán. El usuario indicará que ha terminado de introducir los datos cuando meta un número negativo
+
+
+          
+            //35. Escriba un programa que pida dos números enteros. El programa pedirá de nuevo el segundo número mientras no sea mayor que el primero. El programa terminará escribiendo los dos números.
+
+                                                /* Ejemplo ejecución: 
+                                                Escriba un número: 6
+                                                Escriba un número mayor que 6: 6
+                                                6 no es mayor que 6. Inténtelo de nuevo: 1
+                                                1 no es mayor que 6. Inténtelo de nuevo: 8
+
+                                                Los números que ha escrito son 6 y 8. */
+
+            
+            /* var numero1 = 0;
+            var numero2 = 0;
+            
+            do{
+                numero1  = parseInt(prompt("introduce un número entero"));
+                if(numero1 > numero2) {
+                    numero2 = parseInt(prompt("introduce otro número"));
+                }
+                
+            }while (numero1 < numero2) {
+                document.write(numero1 + numero2);
+            } */
+
+
+
+            //38. . Escriba un programa que pida primero dos números enteros (mínimo y máximo) y que después pida números enteros situados entre ellos. El programa terminará cuando se escriba un número que no esté comprendido entre los dos valores iniciales. El programa termina escribiendo la cantidad de números escritos.
+
+	                                            /* Ejemplo de ejecución:
+                                                Escriba un número: 6
+                                                Escriba un número mayor que 6: 4
+                                                4 no es mayor que 6. Inténtelo de nuevo: 50
+
+                                                Escriba un número entre 6 y 50: 45
+                                                Escriba otro número entre 6 y 50: 6
+                                                Escriba otro número entre 6 y 50: 4
+                                                Escriba otro número entre 6 y 50: 4
+
+                                                Ha escrito 2 números entre 6 y 50. */
+
+
+            /* var contIntentos=0;                                        Armando
+            var numero1 = parseInt(prompt("introduce un número"));
+
+            do{
+                var numero2 = parseInt(prompt("introduce un número mayor que" + numero1));
+            }while(numero1>=numero2);
+
+            do{
+                numero3 = parseInt(prompt("introduce un numero entre "+numero1+" y "+numero2+" número"));
+                contIntentos++;
+            }while(numero3 > numero1 || numero3 < numero3);
+            
+
+            document.write("Ha escrito" + contador + "números entre el" + numero1 + "y" + numero2); */ 
+
+            
+            //que sena num3 mayor que num1 y num3 menor num3
+
+
+
+            //Realizar un tablero de ajedrez
+
+            /* document.write("<table border='1'>");
+
+            var fila
+            var col;
+            var par=1;
+
+            for (fila = 1; fila <=8; fila++) {
+                document.write("<tr>")
+                    for (col =1; col <=8; col++) {
+                        
+                       
+                        
+                        if (col % 2 == par) {
+                            document.write("<td>B</td>");
+                            
+                        }else{
+                            document.write("<td class='celdanegra'>N</td>");
+                        }
+                    }
+                 document.write("</tr>")
+                 
+                 /*if(par==1){ //////para calcular el salteado de las celdas
+                     par= 0;
+                 }else{
+                     par=1;
+                 }
+
+                 par = (par+1) %2;
+            }
+
+            document.write("</table>"); */ 
+
+
+
+            //Juego de piedra papel y tijera
+
+            
+
+            /* var s = "PIEDRA";                     //////CASTAÑA PILONGA
+            var p = "PAPEL";
+            var t = "TIJERAS";
+            var Jugador1 = 0;
+            var Jugador2 = 0;
+            var contador1 = 0;
+            var contador2 = 0;
+
+            do{
+                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
+                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
+
+                if (Jugador1 === s && Jugador2 === t) {
+                document.write("gana jugador 1");
+                contador1++
+                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
+                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
+            }else if (Jugador1 === s && Jugador2 === p) {
+                document.write("gana jugador 2");
+                contador2++
+                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
+                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
+            }else if (Jugador1 === t && Jugador2 === p) {
+                document.write("gana jugador 1");
+                contador1++
+                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
+                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
+            }else if (Jugador1 === p && Jugador2 === s) {
+                document.write("gana jugador 1");
+                contador1++
+                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
+                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
+            }else if (Jugador1 === t && Jugador2 === s) {
+                documente.write("gana jugador 2");
+                contador2++
+                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
+                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
+            }else if (Jugador1 === p && Jugador2 === t) {
+                document.write("gana jugador 2")
+                contador2++
+                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
+                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
+            }
+
+            }while (contador1 || contador2 >= 3) {
+                if (Jugador = contador) {
+                    document.write("GANADOR JUGADOR 1")
+                }else{
+                    document.write("GANADOR JUGADOR 2")
+                }
+
+            } */
+
+            /* var jugador1;
+            var jugador2;
+            var contador1 = 0;
+            var contador2 = 0;
+
+            do{
+                jugador1 = parseInt(prompt("Jugador 1. Introduce tu elección en mayusculas (piedra = 1, papel = 2, tijeras = 3"));
+                jugador2 = parseInt(prompt("Jugador 2. Introduce tu elección en mayúsculas (piedra = 1, papel = 2, tijeras = 3"));
+                if ((jugador1 == 1 && jugador2 == 3) ||
+                    (jugador1 == 2 && jugador2 == 1) ||
+                    (jugador1 == 3 && jugador2 == 2)) {
+                    contador1++;
+                } else {
+                    contador2++;
+                }
+                
+            }while (contador1 < 3 && contador2 < 3)
+                if (contador1 <=3) {
+                    document.write("Gana el jugador 1");
+                }else{
+                    document.writw("Gana el jugador 2");
+                }
+            
+            console.log(contador1, contador2); */
+
+        </script>
+    
+    </body>
+
+</html>
