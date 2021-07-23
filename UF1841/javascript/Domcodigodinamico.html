@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codigo dinámico</title>
+
+        <style>
+            td{
+                border: 1px solid;
+                padding: 5px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="divContenido">  </div>
+        
+        <script>
+				
+        // Crea dinámicamente lo siguientes contenidos dento del divContenido;
+
+        var contenido = "";
+
+        // inserta un div con una imagen dentro url: https://www.fempa.es/wp-content/uploads/2020/10/logo-tmp.png
+
+        contenido = contenido  + "<div><img src='https://www.fempa.es/wp-content/uploads/2020/10/logo-tmp.png'/></div>";           
+
+        // a continuación inserta un div con un texto corto (inventate el texto)
+
+        contenido = contenido  + "<div>esto es un texto corto</div>"           
+
+        // a continuación inserta una tabla de 3x3
+        
+        contenido = contenido + "<table><tr><td></td><td></td><td></td></tr></table>";
+        contenido = contenido + "<table><tr><td></td><td></td><td></td></tr></table>";
+        contenido = contenido + "<table><tr><td></td><td></td><td></td></tr></table>";
+        
+       /*  contenido = contenido + "<table>";                 ///by Armando
+        for(var i=0; i< 3; i++){
+            contenido = contenido + "<tr><td></td><td></td><td></td></tr>";
+        }
+        contenido = contenido + "</table>"; */
+
+
+        document.querySelector("#divContenido").innerHTML=contenido; 
+
+        </script>
+
+    </body>
+
+</html>

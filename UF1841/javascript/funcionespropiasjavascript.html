@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Funciones propias</title>
+
+    </head>
+
+    <body>
+
+        <script>
+
+            //Ejercicio 1. Crear una función que al invocar escriba por pantalla: Hola grupo!!
+
+            /* function saludo (){
+                document.write("Hola grupo!!");
+            }
+
+            saludo(); */
+
+
+
+            //Ejercicio 2. Crear una función que al invocar escriba por consola: Esto es un log de errores
+
+            /* function error (){
+                document.write("Esto es un log de errores");
+            }
+
+            error(); */
+
+
+
+            //3. Crear una función que reciba un parámetro y muestre por pantalla si el número es par o impar, utilizar una función
+            
+            /* function parImpar (num1){
+                if ( num1 % 2 == 0){
+                    document.write(num1 + " es un número par");
+                }else{
+                    document.write(num1 + " es un número impar");
+                }
+            }
+
+            parImpar(8); */
+            
+            /* const parImpar = num1 => {num1 % 2 === 0 
+                                        ? console.log("El número es par")
+                                        : console.log("El número es impar")
+            }; */
+            
+            /* const arreglo = [5, 8, 7];
+
+            const suma = arreglo => {
+                arreglo.forEach(e => {
+                    document.write(e);
+                });
+            } 
+
+            suma(arreglo);*/
+
+
+            //Ejercicios 4, 5, 6 y 7. Crear 4 funciones (suma, resta, multplicación y división). Tendrán todas 2 paametros que serán números. Invoca a cada una de ellas inventandote los parametros.
+
+            /* function suma ( num1, num2){
+                document.write( "El resultado de la suma es " + (num1 + num2));
+                document.write("<br>");
+            }
+
+            function resta (num1, num2){
+                document.write( "El resultado de la resta es " + (num1 - num2));
+                document.write("<br>");
+            }
+
+            function multiplicación (num1 , num2){
+                document.write( "El resultado de la multiplicación " + (num1 * num2));
+                document.write("<br>");
+            }
+
+            function división (num1, num2){
+                document.write( "El resultado de la división es " + (num1 / num2));
+                document.write("<br>");
+            }
+
+
+            suma (2, 3);
+
+            resta (2, 3);
+
+            multiplicación (2, 3);
+
+            división (2, 3); */
+
+
+
+            //8. Crear una función que permita calcular el cubo de un número: muestra el resultado con un alert dentro de la función
+
+            /* function cubo(num1){
+                num1 = parseInt(prompt("Introduce un número"));
+                document.write( num1 * (num1 * num1));
+            }
+
+            cubo(); */
+
+
+
+            //9. Crear una función que muestre un saludo por pantalla. La función recibirá por pantalla el nombre y mostrará el texto “Hola XXXX” : muestra el resultado con un alert dentro de la función
+
+            /* function saludo(nombre){
+                nombre = prompt("Introduce tu nombre");
+                alert("Hola " + nombre);
+            }
+
+            saludo(); */
+
+
+
+            //10. Crear una función que muestre por pantalla los números del 1 hasta el número que reciba como parámetro: muestra el resultado con document.write o console.log.El número final se solicitará al usuario antes de invocar a la función
+
+            /* numtope = parseInt(prompt("Introduce un número"));
+            num1 = 1;
+            
+            function listanum(){
+                var num1 = new Array();
+                for ( var i = 0; i < numtope; i++){
+                    num1[i] = i + 1;
+                }
+                document.write(num1)
+            }
+
+            listanum(); */
+
+            /* numtope = parseInt(prompt("Introduce un número"));
+            
+            function listanum(){
+                for ( var i = 1; i <= numtope; i++){
+                    document.write(i);
+                }
+            }
+
+            listanum(); */
+
+
+
+            //11. Crear una función que pida un nombre, un apellido y un lugar y a raíz de ahí muestre en pantalla una pequeña historia: muestra el resultado con document.write
+
+            /* function datos(){
+                var nombre = "Antonio";
+                var apellido = "Domingo";
+                var lugar = "En un lugar de la mancha..."
+                    document.write(nombre + "<br>" + apellido + "<br>" + lugar);
+            }
+
+            datos(); */
+
+
+
+            //12.Realizar un programa que, mediante una función denominada permuta, implemente la permutación de los valores de dos variables enteras que se rellenaron en la función principal
+
+            /* let a;                                                 //by Juanfri
+            let b;
+
+            function principal(){
+                a = 5;
+                b = 3;
+            }
+
+            principal();
+            document.write(`a: ${a} y b: ${b}`);
+            permuta(a, b);
+
+            
+            function permuta(a, b){
+                let c = a;
+                a = b;
+                b = c;
+                document.write(`a: ${a} y b: ${b}`);
+            } */
+            
+            
+        
+
+
+            
+
+    
+            
+                       
+        </script>
+        
+    </body>
+
+</html>

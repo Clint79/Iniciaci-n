@@ -182,7 +182,7 @@
                     }
                  document.write("</tr>")
                  
-                 /*if(par==1){ //////para calcular el salteado de las celdas
+                 /*if(par==1){                         //////para calcular el salteado de las celdas
                      par= 0;
                  }else{
                      par=1;
@@ -197,65 +197,11 @@
 
             //Juego de piedra papel y tijera
 
-            
-
-            /* var s = "PIEDRA";                     //////CASTAÑA PILONGA
-            var p = "PAPEL";
-            var t = "TIJERAS";
-            var Jugador1 = 0;
-            var Jugador2 = 0;
-            var contador1 = 0;
-            var contador2 = 0;
-
-            do{
-                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
-                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
-
-                if (Jugador1 === s && Jugador2 === t) {
-                document.write("gana jugador 1");
-                contador1++
-                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
-                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
-            }else if (Jugador1 === s && Jugador2 === p) {
-                document.write("gana jugador 2");
-                contador2++
-                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
-                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
-            }else if (Jugador1 === t && Jugador2 === p) {
-                document.write("gana jugador 1");
-                contador1++
-                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
-                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
-            }else if (Jugador1 === p && Jugador2 === s) {
-                document.write("gana jugador 1");
-                contador1++
-                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
-                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
-            }else if (Jugador1 === t && Jugador2 === s) {
-                documente.write("gana jugador 2");
-                contador2++
-                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
-                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
-            }else if (Jugador1 === p && Jugador2 === t) {
-                document.write("gana jugador 2")
-                contador2++
-                Jugador1 = prompt("Jugador 1 Introduce tu elección en mayúsculas");
-                Jugador2 = prompt("Jugador 2 Introduce tu elección en mayúsculas");
-            }
-
-            }while (contador1 || contador2 >= 3) {
-                if (Jugador = contador) {
-                    document.write("GANADOR JUGADOR 1")
-                }else{
-                    document.write("GANADOR JUGADOR 2")
-                }
-
-            } */
-
-            /* var jugador1;
-            var jugador2;
-            var contador1 = 0;
-            var contador2 = 0;
+            /* 1 = Piedra
+            2 = Papel
+            3 = Tijeras
+            var jugador1
+            var jugador2
 
             do{
                 jugador1 = parseInt(prompt("Jugador 1. Introduce tu elección en mayusculas (piedra = 1, papel = 2, tijeras = 3"));
@@ -272,10 +218,54 @@
                 if (contador1 <=3) {
                     document.write("Gana el jugador 1");
                 }else{
-                    document.writw("Gana el jugador 2");
+                    document.write("Gana el jugador 2");
                 }
             
-            console.log(contador1, contador2); */
+            console.log(contador1, contador2); */ 
+
+
+                //Piedra, papel y tijeras by Juan Carlos
+
+            /* var victoriasjugador1 = 0;
+            var victoriasjugador2 = 0;
+
+            do {
+                var jugadajugador1 = prompt("Es el turno del Jugador 1. Elige piedra, papel o tijeras:");
+                var jugadajugador2 = prompt("Es el turno del Jugador 2. Elige piedra, papel o tijeras:");
+
+                if (jugadajugador1=="piedra" && jugadajugador2=="tijeras"){
+                    victoriasjugador1++;
+                    alert("Gana el Jugador 1 porque " + jugadajugador1 + " gana a " + jugadajugador2 + " .");
+                }
+                if (jugadajugador1=="papel" && jugadajugador2=="piedra"){
+                    victoriasjugador1++;
+                    alert("Gana el Jugador 1 porque " + jugadajugador1 + " gana a " + jugadajugador2 + " .");
+                }
+                if (jugadajugador1=="tijeras" && jugadajugador2=="papel"){
+                    victoriasjugador1++;
+                    alert("Gana el Jugador 1 porque " + jugadajugador1 + " gana a " + jugadajugador2 + " .");
+                }
+
+                if (jugadajugador2=="piedra" && jugadajugador1=="tijeras"){
+                    victoriasjugador2++;
+                    alert("Gana el Jugador 2 porque " + jugadajugador2 + " gana a " + jugadajugador1 + " .");
+                }
+                if (jugadajugador2=="papel" && jugadajugador1=="piedra"){
+                    victoriasjugador2++;
+                    alert("Gana el Jugador 2 porque " + jugadajugador2 + " gana a " + jugadajugador1 + " .");
+                }
+                if (jugadajugador2=="tijeras" && jugadajugador1=="papel"){
+                    victoriasjugador2++;
+                    alert("Gana el Jugador 2 porque " + jugadajugador2 + " gana a " + jugadajugador1 + " .");
+                }
+            
+            } while (victoriasjugador1 !=3 && victoriasjugador2 !=3);
+
+            if (victoriasjugador1 ==3) {
+                document.write("El ganador es el Jugador 1 con " + victoriasjugador1 + " victorias sobre " + victoriasjugador2 + " .");
+            } else {
+                document.write("El ganador es el Jugador 2 con " + victoriasjugador2 + " victorias sobre " + victoriasjugador1 + " .");
+            } */
 
         </script>
     

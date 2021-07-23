@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=    <!DOCTYPE html>
+
+        <style>
+
+            body{
+                text-align: center;
+                font-size: 35px;
+            }
+
+            td{
+                padding: 10px;
+            }
+
+            tr:nth-child(even) { background: #ddd }
+            tr:nth-child(odd) { background: #fff}
+            
+
+        </style>
+
+    </head>
+    <body>
+
+        <div id="div1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit non temporibus, iure fugiat nesciunt consequuntur atque, perspiciatis et neque, ut aperiam ex modi a aspernatur quia sunt voluptatibus mollitia sint.
+        </div>
+
+
+        <div id="divFlotante" style="position: absolute; top: 10%; left: 60%; background-color: blue; color: white">
+                
+        </div>
+        
+
+        <div id="div2">
+            <img  width="50" src="sol.jpg"/>
+        </div>
+
+        <div class="miClase">
+            <input type="text" name="mitexto"/>
+        </div>
+
+        
+        
+        <script>
+			debugger;					
+            /*var lista = document.querySelectorAll("div") // búsqueda por tipo de elemento  -- document.getElementByTagName
+            for (var i in lista) {
+               var contenido = lista[i].innerHTML;
+               contenido = contenido + "<img src='sol.jpg'/>";
+               lista[i].innerHTML = contenido;
+                
+            }
+
+           
+            var elemento = document.querySelector("#div2");
+            elemento.innerHTML = "ahora hay texto";*/
+
+            
+
+            debugger;
+
+            var divF = document.querySelector("#divFlotante");
+            var tabla="<table border='1' class='miclase'>";
+                for( var i=0; i< 10; i++){
+                    tabla = tabla + "<tr>";
+                    tabla = tabla + "<td>X</td><td>X</td><td>X</td>";
+                    tabla = tabla + "</tr>";
+                }
+
+                tabla= tabla + "</table>";
+
+            divF.innerHTML = tabla;
+
+            
+            
+             /*debugger;
+
+            var lista = document.querySelector("#div1") // búsqueda por id -- -- document.getElementById()
+
+            var lista = document.querySelectorAll("[name='mitexto']") // búsqueda por clase -- document.getElementByClassName
+
+            var listaImagenes = document.querySelectorAll("#div2 img") // búsqueda por elementos hijo
+            */
+        </script>
+
+            
+    </body>
+    
+</html>

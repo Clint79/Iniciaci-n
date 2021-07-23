@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Return</title>
+
+    </head>
+
+    <body>
+
+        <script>
+
+        // Ejercicio 1. Una función que reciba cinco números enteros como parámetros y muestre por pantalla el resultado de sumar los cinco números (hay que devolver el valor y mostrar el resultado fuera de la función).
+
+        /* function suma(n1, n2, n3, n4, n5){
+            return n1 + n2 + n3 + n4 + n5; 
+        }
+        
+        
+        document.write(suma(2, 5, 1, 8, 10)); */
+        
+        
+
+        //Ejercicio 2. Una función que reciba cinco números enteros como parámetros y muestre por pantalla el resultado de sumar los cinco números (hay que devolver el valor y   mostrar  el resultado fuera de la función). 
+        /* Asigna el resultado de una invocación (llamada) a la función con parámetros de entrada, por ejemplo: 2, 5, 1, 8, 10            
+        A una variable que tenga de nombre “temporal”, multiplica esa variable por 2 y muestra por pantalla el valor de la variable en pantalla. */
+        
+        /* function suma(n1, n2, n3, n4, n5){
+            return n1 + n2 + n3 + n4 + n5; 
+        }
+        
+        document.write(suma(2, 5, 1, 8, 10));
+        let temporal = suma(2, 5, 1, 8, 10) * 2;
+        console.log(temporal); */
+
+
+        
+        //Ejercicio 3. Una función que reciba como parámetros el valor del radio y la altura de un cilindro y devuelva el volumen del cilindro, teniendo en cuenta que el volumen de un cilindro se calcula como Volumen = númeroPi * radio * radio * Altura siendo númeroPi = 3.1416 aproximadamente. Muestra por pantalla el valor de la variable en pantalla.
+
+        /* function volumen (radio, altura) {                                  //by Juanfri
+            const pi = 3.1416;
+            return pi * radio * radio * altura;
+        } */
+
+        /* const volumen = (radio, altura) => {return Math.PI * radio * radio * altura;}
+
+        console.log(volumen(4, 8)); */
+
+
+
+        //Ejercicio 4. Crea un script donde declares una función obtenerImporteConImpuestos que reciba dos parámetros: el importe sin impuestos (numérico) y el tipo de producto (numérico entero). La función debe mostrar por pantalla el importe sin impuestos más el 21% si el tipo de producto es 1, ó el importe sin impuestos más el 10% si el tipo de producto es 2, ó el importe sin impuestos más el 5% si el tipo de producto es 3.
+
+        /* function obtenerImporteConImpuestos (importe, tipoProducto) {
+            let importeIva;
+
+                if (tipoProducto === 1)
+                    importeIva = importe * 1.21;
+                else if (tipoProducto === 2)
+                    importeIva =  importe * 1.1;
+                else if ( tipoProducto === 3)
+                    importeIva =  importe * 1.05;
+                else 
+                    console.log("El tipo de importe de es correcto");
+                
+            return importeIva;
+        } */
+
+        document.write(obtenerImporteConImpuestos(100, 1));
+    
+        </script>
+        
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM ejercicio 2 4.4</title>
+
+    </head>
+
+    <body>
+
+        <h1>Inserta un textarea. Bajo de ese elemento, debe de aparecer un texto con los carácteres que se llevan escritos. Debe de actualizarse cada vez que se pulsa una letra. Debe impedirse que se inserten más de 20 caractéres.</h1>
+
+        <form >
+
+            <textarea id="texto" cols="60" rows="25" onkeyup="recuento()"></textarea>
+
+        </form>
+
+        <div id="cantidadTexto">
+
+        </div>
+
+        <script>
+
+            function recuento(){
+                var contenido = document.querySelector("#texto").value;
+                    contenido = contenido.substring(0,20);
+
+                    var cuentaLetras = contenido.length;
+
+                    document.querySelector("#cantidadTexto").innerHTML = cuentaLetras;
+                    document.querySelector("#texto").value = contenido;                       
+            }  
+                
+        </script>
+
+    </body>
+
+</html>

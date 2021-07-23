@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM ejercicio 1 4.4</title>
+
+    </head>
+
+    <body>
+
+        <h1>Inserta 4 botones con 4 nombres de personas. Cuando se pulse el boton, bajo de los 4 elementos pondrá: "Hola 'nombre_seleccionado'</h1><br>
+
+            b) igual pero con 3 botones que ponga piedra, papel, tijera y muestre su imagen</h1>
+ 
+            <button onclick="boton('Sarah')"> Sarah </button>
+            <button onclick="boton('Virginia')"> Virginia </button>
+            <button onclick="boton('Clint')"> Clint </button>
+            <button onclick="boton('Chiqui')"> Chiqui </button><br>
+
+            <div id = "saludos">
+
+            </div>
+
+            <hr>
+
+            <button onclick="elemento('Piedra')"> Piedra </button>
+            <button onclick="elemento('Papel')"> Papel </button>
+            <button onclick="elemento('Tijeras')"> Tijeras </button><br>
+
+            <img id = "juego">
+
+
+            <script>
+
+                function boton (nombre){                                    
+                    document.getElementById("saludos").innerHTML = "¡Hola!" + nombre;
+                }     
+
+                
+                function elemento (eleccion){ 
+                    document.getElementById("juego").src = "img/" + eleccion + ".png";
+                }
+
+                
+            </script>
+
+
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM ejercicio 3 4.4</title>
+
+    </head>
+
+    <body>
+        
+        <h1>Realiza una página que simule el lanzamiento de un dado.<br> 
+            Ayuda: Créate con el paint 6 imagenes, cada imagen será la cara de un dado.<br> 
+            Inserta un botón que al pulsar busque un número aleatorio del 1 al 6 y muestre la cara correspondiente<br>
+        </h1>
+
+        <div id="divdado">
+
+            <img id="tirada" src="img/lado1.png">
+
+        </div>
+
+        <button onclick="tiradaDado(1)">Tirar el dado</button>
+
+        <script>
+
+            var imagenesDado = ["img/lado1.png","img/lado2.png","img/lado3.png","img/lado4.png","img/lado5.png","img/lado6.jpg",];
+            var suerte;
+            var contador = 0;
+
+            function tiradaDado(min,max) {
+                suerte = setInterval (function() {
+                    var aleatorio = Math.floor(Math.random() * (max - min + 1) + min);
+                        document.getElementById("tirada").src = imagenesDado[aleatorio];
+                            contador = contador +1;
+                                if ( contador == imagenesDado.length){
+                                    contador = 0;
+                                        clearInterval(suerte);
+                    }
+                }, 150);
+            }
+
+        </script>
+    
+    </body>
+
+</html>

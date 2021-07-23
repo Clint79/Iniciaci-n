@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio DOM</title>
+
+    </head>
+
+    <body>
+        
+        <script>
+
+            var imagen = new Array();                         
+            imagen [0] = "img/1.jpg";
+            imagen [1] = "img/2.jpg";
+            imagen [2] = "img/3.jpg";
+            imagen [3] = "img/4.jpg";
+            imagen [4] = "img/5.jpg"; 
+
+            function cambioImagen(i) {                     
+                document.getElementById("foto").src = imagen[i];
+            }
+
+        </script>
+
+            <center>
+
+                <img id="foto" width="900px" height="900px" src="img/1.jpg" alt="">
+                <br>
+                <img onmouseover="cambioImagen(0)" width="200px" height="200px" src="img/2.jpg" alt="">
+                <img onmouseover="cambioImagen(1)" width="200px" height="200px" src="img/3.jpg" alt="">
+                <img onmouseover="cambioImagen(2)" width="200px" height="200px" src="img/4.jpg" alt="">
+                <img onmouseover="cambioImagen(3)" width="200px" height="200px" src="img/5.jpg" alt="">
+                <img onmouseover="cambioImagen(4)" width="200px" height="200px" src="img/1.jpg" alt="">
+I            </center>
+
+
+            <!-- <script>                                         /////otra solucion///////  
+                function mostrarPasandoURL(foto) {
+                    document.getElementById("imagen").src= foto ;
+                }   
+    
+                function mostrarPasandoThisSRC(foto) {
+                    document.getElementById("imagen").src= foto ;
+                }
+    
+                function mostrarPasandoSOLOThis(elemento) {
+                    document.getElementById("imagen").src= elemento.src ;
+                }
+        </script>
+    
+        <img id="imagen" width="332" height="160"  id="imagen" src="https://cdn.pixabay.com/photo/2014/09/07/22/34/car-race-438467_960_720.jpg">
+        <br/>
+        <img onmouseover="mostrarPasandoURL('https://cdn.pixabay.com/photo/2014/09/07/22/34/car-race-438467_960_720.jpg')" width="80" src="https://cdn.pixabay.com/photo/2014/09/07/22/34/car-race-438467_960_720.jpg"> 
+        <img onmouseover="mostrarPasandoThisSRC(this.src)" width="80" src="https://cdn.pixabay.com/photo/2012/11/02/13/02/car-63930_960_720.jpg"> 
+        <img onmouseover="mostrarPasandoSOLOThis(this)" width="80" src="https://cdn.pixabay.com/photo/2018/05/03/08/52/auto-3370706_960_720.jpg"> 
+        <img onmouseover="mostrarPasandoSOLOThis(this)" width="80" src="https://cdn.pixabay.com/photo/2016/11/22/23/44/porsche-1851246_960_720.jpg"> -->
+
+    </body>
+
+    
+
+</html>

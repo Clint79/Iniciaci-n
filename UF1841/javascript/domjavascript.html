@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM</title>
+
+    </head>
+
+
+    <body>
+
+        <img id="imagen" src="img/1.jpg" alt="bicho agachado">              <!-- Cambio de una foto -->
+
+        <hr>
+
+        <p>parrafo 1</p>
+        <p>parrafo 2</p>
+        <p>parrafo 3</p>
+        <p>parrafo 4</p>
+
+        <hr>
+
+        <img id="imagencarrusel" src="img/1.jpg" alt="bicho agachado">          <!-- Cambio de varias fotos -->
+
+        <button onclick ="boton()" >Cambiar imagen</button>                   <!-- boton con una funcion de cambiar imagenes -->
+
+        <hr>
+
+
+        <script>
+
+            var parrafos = document.getElementsByTagName("p");       //modificamos un solo elemento desde javascript
+                parrafos[i].innerHTML = "mi parrafo nuevo"  ;
+
+            for (var i = 0; i < parrafos.length; i++) {         // modificamos todos los elementos que se llamen igual 
+                parrafos[i].innerHTML = "mi parrafo nuevo"  ;
+            }
+
+        </script>
+
+        <p name="p1">parrafo 1</p>
+        <p name="p2">parrafo 2</p>
+        <p name="p3">parrafo 3</p>
+        <p name="p4">parrafo 4</p>
+
+        <hr>
+
+        <script>
+
+            var masParrafos = document.getElementsByName("p2");     //modificamos un elemento respecto a su nombre. De uno en uno
+                masParrafos[0].innerHTML = "otro texto distinto"
+
+        </script>
+
+        <p name="p1">parrafo 1</p>
+        <p name="p2">parrafo 2</p>
+        <p name="p3">parrafo 3</p>
+        <p name="p4" id="ultimo">parrafo 4</p>
+
+        <hr>    
+
+        <script>
+
+            var ultimoP = document.getElementById("ultimo");                       //para modificar desde identificano el "id"
+                ultimoP.innerHTML = "El último párrafo";
+
+           document.getElementById("ultimo").innerHTML = "El último párrafo";      // igual que el de arriba pero en una linea
+
+           document.getElementById("ultimo").innerText = "<b>El</b> último párrafo";  //con innerText copia el texto hasta con etiquetas
+
+           document.getElementById("ultimo").style.color = "red"                 //modificamos el estilo de un elemento
+
+        </script>
+
+        <p id="p1">parrafo 1</p>
+        <p id="p2">parrafo 2</p>
+        <p id="p3">parrafo 3</p>
+        <p id="p4">parrafo 4</p>
+
+        <hr>
+
+
+        <script>
+
+            //Ejercicio de clase. Cambiar el color de la letra de los párrafos a verde. Escribir en cada párrafo: Mi texto número X ( siendo X el número del párrafo.).Poner las letras en mayúsculas
+
+            document.getElementById("p1").style.color = "green";
+
+            var ultimoP = document.getElementById("p1");                       
+                ultimoP.innerHTML = "Mi texto número 1";  
+                
+                ultimoP.innerHTML = ultimoP.innerHTML.toUpperCase();
+                    
+            document.getElementById("p2").style.color = "green";
+
+             var ultimoP = document.getElementById("p2");                       
+                ultimoP.innerHTML = "Mi texto número 2";  
+
+                ultimoP.innerHTML = ultimoP.innerHTML.toUpperCase();
+
+            document.getElementById("p3").style.color = "green";
+
+            var ultimoP = document.getElementById("p3");                       
+                ultimoP.innerHTML = "Mi texto número 3";  
+
+                ultimoP.innerHTML = ultimoP.innerHTML.toUpperCase();
+
+            document.getElementById("p4").style.color = "green";
+
+            var ultimoP = document.getElementById("p4");                       
+                ultimoP.innerHTML = "Mi texto número 4";  
+
+                ultimoP.innerHTML = ultimoP.innerHTML.toUpperCase();
+
+
+            document.getElementById("imagen").src = "img/2.jpg"      // cambiar una imgen con el "id"
+
+            //Ejercicio de clase. Creamos un array de 5 imagenes.
+            //Sacamos modulo 5 de los segundos actuales: (new Date().getTime())%5.
+            //Sustituir el atributo src de "imagen" por la imagen del array que toque.
+
+            var img = [];                          //se crea un array con las imagenes
+            img [0] = "img/1.jpg";
+            img [1] = "img/2.jpg";
+            img [2] = "img/3.jpg";
+            img [3] = "img/4.jpg";
+            img [4] = "img/5.jpg";
+
+            imagencarrusel = (new Date().getTime())%5               // se saca un número aleatorio entre 1 y 5
+            
+            document.getElementById("imagencarrusel").src = img[imagencarrusel]        // primero hay que meterse donde esta la imagen y se introduce el array y coloca                                                                                  entre corchetes la variable del numero random
+    
+
+            function boton() {                     //funcion creada para cambiar la imagen desde el boton
+                var img = [];                          
+                    img [0] = "img/1.jpg";
+                    img [1] = "img/2.jpg";
+                    img [2] = "img/3.jpg";
+                    img [3] = "img/4.jpg";
+                    img [4] = "img/5.jpg";
+
+                        imagencarrusel = (new Date().getTime())%5               
+            
+                        document.getElementById("imagencarrusel").src = img[imagencarrusel]
+            }
+
+        </script>
+
+          
+
+    </body>
+
+</html>

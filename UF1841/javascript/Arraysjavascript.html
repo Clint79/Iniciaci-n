@@ -14,40 +14,175 @@
 
         <script>
 
-            //Primera explicanción Arrays
-            /* var listaNumeros = new Array(100);
+            //39. Crear un array llamado meses y que almacene el nombre de los doce meses del año. Mostrar por pantalla los doce nombres utilizando la función alert() para mes del año.
+             
+             /* var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+                alert(meses[0]);
+                alert(meses[1]);
+                alert(meses[2]);
+                alert(meses[3]);
+                alert(meses[4]);
+                alert(meses[5]);
+                alert(meses[6]);
+                alert(meses[7]);
+                alert(meses[8]);
+                alert(meses[9]);
+                alert(meses[10]);
+                alert(meses[11]); */
+            
 
-            for(var i=0; i<listaNumeros.length; i++){
-                listaNumeros[i]=i;
-            }
+                
 
-            for(var i=0; i<listaNumeros.length; i++){
-                document.write(listaNumeros[i]);
-            }
 
-            for (var i=listaNumeros.legth-1; i>0; i--){
-                document.write(listaNumeros[i]);
+            //40. Mismo ejercicio que el anterior pero mostrar todos los meses en un único alert()
+
+            /* var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+                alert(meses) */
+
+
+
+            //41. Haz un programa que imprima los múltiplos de 3 hasta 100 con un bucle while
+            
+            /* var numero = new Array(100);
+            var n = 1;
+
+            while(n <= numero.length){
+                if (n % 3 == 0 ){
+                    document.write(n + "<br>");
+                }
+                n++;
             } */
 
 
 
-            //45. Rellene un array con 5 números  introducidos por teclado, luego copia los números de un array a otro array diferente multiplicados por 2 y muestre el segundo array
-
-            debugger
+            //42. Rellene un array con los 100 primeros números enteros y los muestre en pantalla en orden ascendente
             
-            var lista = new Array (5, 4, 3, 2, 1);
-            var lista2 = new Array ();
+            /* var numero = new Array(100);
 
-            for ( var i = 0; i < lista.length; i++) { 
-                lista[i] * 2;
-                lista2.slice(lista);
-                    document.write(lista2);
+            for (var n = 0; n < numero.length; n++ ) {
+                document.write(n)
+            } */
+
+
+
+
+            //43. Rellene un array con los 100 primeros números enteros y los muestre en pantalla en orden descendente
+
+            /* var numeros = new Array (100);
+            for (let index = 100; index > 0; index--) {
+                const element = numeros[index] = index;
+                document.write(index);
+                
+            } */
+
+
+
+            //44. Rellena una array con 10 números introducidos por teclado y devuelve por pantalla cual es el menor y cual es mayor de ellos
+            
+            /* var numeros = new Array();
+            var max = 0;
+            var min = 1000;
+            var cantidad = 3
+
+            for (var i = 0; i < cantidad; i++) {
+                 numeros[i] = parseInt(prompt("Introduce un numero"));
+                    if(numeros[i] > max) {
+                        max = numeros[i];
                 }
+                    if(numeros[i] < min) {
+                        min = numeros[i];
+                }   
+            }
+                    document.write("El número mayor es el" + max);
+                    document.write("<br>");
+                    document.write("El número minimo es el" + min); */
+
+
+
+            //45. Rellene un array con 5 números  introducidos por teclado, luego copia los números de un array a otro array diferente multiplicados por 2 y muestre el segundo array
+            
+            /* var cantidad = 2;
+            var lista = new Array();
+            var lista2 = new Array();
+
+            for ( var i = 0; i < cantidad; i++) {
+                lista[i] = parseInt(prompt("Introduce un número")); 
+            }
+            for ( var n = 0; n < cantidad; n++) {
+                lista2[n] = lista[n] * 2    
+            }
+                    document.write(lista2); */
+
+
+            
+
+            /* //46. Rellene un array con 20 números (del 1 al 20) y luego busque un número concreto (introducido por pantalla), devuelve que posición ocupa el número en el array
+            
+            var lista = new Array(numeros);
+            var numeros = 20;
+            var posicion ;
+         
+
+                for ( var i = 0; i  < numeros; i++) {
+                    lista[i] = i + 1;
+                }
+                posicion = parseInt(prompt("Introduce una posición"));
+
+                for ( var n = 0; n <= posicion; n++)
+
+                    if ( posicion == lista){
+
+                    }
+                    document.write(n) */
+
+
+
+
+            //47.	Rellena una array con 10 números introducidos por teclado y devuelve por pantalla cual es el menor y cual es mayor de ellos. Adicionalmente debes decir cuántas veces se encuentra en el array ese número
+
+            /* debugger
+            var lista = new Array();
+            var cantidad = 5;
+            var mayor = 0;
+            var menor = 100;
+            var mayornumero = 0;
+            var menornumero = 0;
+
+            for ( var i = 0; i < cantidad; i++) {                
+                lista[i] = parseInt(prompt("introduce un número"));
+                    if(lista[i] > mayor) {
+                        mayor = lista[i];
+                    }
+                    if(lista[i] < menor) {
+                        menor = lista[i];
+                    }  
+            }
+            document.write("el número mayor es el" + mayor);
+            document.write("<br>");
+            document.write("el número menor es el" + menor); */
+
+
+
+            //48. Rellena una array con 10 números introducidos por teclado y devuelve la suma de todos los números
+
+            //49. Rellene un array con 10 números (introduce los 10 números por teclado) y luego busque un número concreto (introducido por pantalla). 
+                //Pista: para no copiar y pegar la instrucción PROMPT prueba introducir esta instrucción dentro de un bucle FOR
+
+            //50. Pinta un tablero de ajedrez sin fichas (ojo con los colores de las casillas)
+
+            //51. Pinta un tablero de ajedrez con fichas. Donde los peones son la letra P, las torres son T, los caballos son C, los alfiles son A, el rey es R y la reina es M.
+	              //Mejora: utiliza imágenes en vez de letras
+ 
+
+            //52. Crear un programa que lee por teclado la nota de los alumnos de una clase y calcula la nota media del grupo, además también muestra los alumnos con notas     superiores a la media. 
+               /*  A tener en cuenta:
+                El número de alumnos se lee por teclado. Este programa utiliza un array de elementos que contendrá las notas de los alumnos. 
+                El tamaño del array será el número de alumnos de la clase, por lo tanto primero se pedirá por teclado el número de alumnos y a continuación se creará el array.
+                Se tendrán que realizar 3 recorridos sobre el array, el primero para asignar a cada alumno las notas introducidas por teclado, el segundo para sumarlas y calcular la media y el tercero para mostrar los alumnos con notas superiores a la media. */
+            
+
             
             
-
-
-
 
             // Hacer una lista de números y que se vea en pantalla el mayor y el menor de la lista
           
@@ -85,6 +220,204 @@
 
 
 
+            //Arrays multidimensionales, explicación
+
+            /* var tamano = 4;
+            var miarray = new Array ( tamano ); //crea una matriz de longitud 4
+
+            for (let i = 0; i < tamano; i++) {
+                miarray[i] = new Array (tamano); //define cada elemento como una matriz
+                
+            }
+            //escritura
+            for (let indexfila = 0; indexfila < miarray.length; indexfila++) {              //cuando quieres escribir a 0 una array multidemensional
+                for (let indexcolumna = 0; indexcolumna < miarray.length; indexcolumna++) {
+                    miarray[indexfila][indexcolumna] = indexfila;    
+                }
+            }
+            //lectura
+            for (let indexfila = 0; indexfila < miarray.length; indexfila++) {              //cuando quieres leer una array multidemensional
+                for (let indexcolumna = 0; indexcolumna < miarray.length; indexcolumna++) {
+                    document.write (miarray[indexfila][indexcolumna]);    
+                }
+                document.write("<br>")
+            }
+
+            miarray[0][0] = "victor"; //introducir valores manualmente
+            miarray[1][1] = 40; */
+
+            /* document.write(miarray[0][0]) //imprimir una posición que queremos */
+
+
+
+            //Ejercicio array multidemensionales
+
+            
+
+            /* var contador = 1;
+            var tamano = 4;
+            var miarray = new Array ( tamano ); //crea una matriz de longitud 4
+        
+
+            for (let i = 0; i < tamano; i++) {   
+            miarray[i]=  new Array(tamano); //define cada elemento como una matriz
+            }
+
+            //escritura
+            for (let indexfila = 0; indexfila < miarray.length; indexfila++) {              //cuando quieres escribir a 0 una array multidemensional                      
+                for (let indexcolumna = 0; indexcolumna < miarray.length; indexcolumna++) {
+                    miarray[indexcolumna][indexfila] = contador;
+                    contador = contador + 1;                
+                }
+            }
+
+            document.write("<table border='1'>");
+
+            //lectura
+            for (let indexfila = 0; indexfila < miarray.length; indexfila++) {              //cuando quieres leer una array multidemensional
+                document.write("<tr>");
+                for (let indexcolumna = 0; indexcolumna < miarray.length; indexcolumna++) {
+                    document.write("<td>");
+                    document.write(miarray[indexcolumna][indexfila]);   
+                    document.write("</td>");
+                }
+                document.write("<br>");
+                document.write("</tr>");
+            }           
+            document.write("</table>"); */
+
+
+
+            //Explicación array asociativas
+
+            /* var alumno = [];                                     // crear una array
+            alumno ["nombre"] = Paz;
+            alumno ["apellido"] = Guerra;
+            alumno ["tlf"] = 333333;
+
+            listaAlumnos.push(alumno);                           // añadimos una array a otra array
+
+            var alumno = [];
+            alumno ["nombre"] = Benito;
+            alumno ["apellido"] = Camela;
+            alumno ["tlf"] = 555555;
+
+            for( var i in listaAlumnos){
+                document.write("Alumno:" + listaAlumnos[i]["nombre"] + "<br>")
+            } */
+
+
+
+            //Ejercicio arrays asociativos
+
+            /* Vamos a hacer una aplicación de registro de alumnos de fempa
+
+            Vamos a meter 3 alumnos desde código (no utilzar prompt)
+
+                Para cada alumno se necesitará:
+                    DNI
+                    Nombre
+                    Apellido
+                    Fecha nacimiento 
+                    nombre curso a realizar
+
+            Listar en la web los alumnos matriculados con todos sus datos (utilizar una tabla) */
+            debugger
+
+
+            var listaAlumnos = [];
+            var alumno = [];
+            alumno ["nombre"] = "Benito";
+            alumno ["apellido"] = "Diaz";
+            alumno ["dni"] = 555555;
+            alumno ["fecha de nacimiento"] = 30/2/1492;
+            alumno ["nombre de curso a realizar"] = "Electricidad";
+
+            listaAlumnos.push(alumno)
+
+            var alumno = [];
+            alumno ["nombre"] = "Pedro";
+            alumno ["apellido"] = "Molina";
+            alumno ["dni"] = 555555;
+            alumno ["fecha de nacimiento"] = 30/2/1984;
+            alumno ["nombre de curso a realizar"] = "Fisica";
+
+            listaAlumnos.push(alumno)
+
+            var alumno = [];
+            alumno ["nombre"] = "Juan";
+            alumno ["apellido"] = "Gonzalez";
+            alumno ["dni"] = 555555;
+            alumno ["fecha de nacimiento"] = 30/2/1492;
+            alumno ["nombre de curso a realizar"] = "Jardineria";
+
+            listaAlumnos.push(alumno)
+
+            document.write("<table border = '1'>");
+
+
+            for ( var i in listaAlumnos ) {
+                document.write("<tr>");
+                document.write("<td>");
+                document.write("Nombre" + listaAlumnos[i]["nombre"]);
+                document.write("</td>");
+               
+                    
+
+            
+
+                    /* Listar en la web los alumnos matriculados con todos sus datos (utilizar una tabla)
+                    
+                    
+                    var listaAlumnos = [];
+                    var alumno = [];
+                    
+
+                    alumno ["DNI"] = "41238579N";
+                    alumno ["Nombre"] = "Felipe";
+                    alumno ["Apellido"] = "Gomez";
+                    alumno ["Fecha_nacimiento"] = "10/01/1987";
+                    alumno ["Nombre_curso_a_realizar"] = "Telecomunicaciones";
+
+                    listaAlumnos.push(alumno);
+                    
+                    alumno =[];
+                    alumno ["DNI"] = "41738589j";
+                    alumno ["Nombre"] = "Angel";
+                    alumno ["Apellido"] = "Perez";
+                    alumno ["Fecha_nacimiento"] = "26/03/1990";
+                    alumno ["Nombre_curso_a_realizar"] = "Mecanica";
+
+                    listaAlumnos.push(alumno);
+
+                    alumno =[];
+                    alumno ["DNI"] = "41738589j";
+                    alumno ["Nombre"] = "Angel";
+                    alumno ["Apellido"] = "Perez";
+                    alumno ["Fecha_nacimiento"] = "26/03/1990";
+                    alumno ["Nombre_curso_a_realizar"] = "Mecanica";
+                    
+                    listaAlumnos.push(alumno);
+                    
+
+                    document.write("<table border='1'>");
+                        document.write("<tr><td>DNI</td><td>Nombre</td><td>Apellido</td><td>Fecha nacimiento</td><td>Matriculado</td></tr>");
+                        for(var i in listaAlumnos){
+                            document.write("<tr>");
+                            document.write("<td>"+listaAlumnos[i]["DNI"]+"</td>");
+                            document.write("<td>"+listaAlumnos[i]["Nombre"]+"</td>");
+                            document.write("<td>"+listaAlumnos[i]["Apellido"]+"</td>");
+                            document.write("<td>"+listaAlumnos[i]["Fecha_nacimiento"]+"</td>");
+                            document.write("<td>"+listaAlumnos[i]["Nombre_curso_a_realizar"]+"</td>");
+                            
+                            document.write("</tr>");
+                        }       
+                    document.write("</table>");
+
+                            }
+
+
+                            document.write("</table>") */
         </script>
     
     </body>

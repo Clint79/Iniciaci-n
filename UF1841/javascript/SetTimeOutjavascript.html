@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Set Time Out</title>
+
+        <style>
+
+            td{
+                border: 1px solid;
+                padding: 5px;
+            }
+
+            #imagenPrincipal{
+                margin: auto;
+                text-align: center;
+            }
+
+            #otrasImagenes img{
+                width: 200px; 
+                float: left;
+                margin: 10px;
+            }
+
+            #imagenPrincipal img{
+                width: 400px; 
+                margin: 10px;
+                text-align: center;
+            }
+
+        </style>
+
+        
+    </head>
+
+    <body>
+
+        <!-- Explicacion y ejemplo
+
+        <button onclick="pararEjecucion()">Corregir</button>
+
+        <div>
+                <input type="text"/><br/>
+                <input type="text"/><br/>
+                <input type="text"/><br/>
+                <input type="text"/><br/>
+                <input type="text"/><br/>
+        </div>
+
+        <div id="cuentaAtras"></div>
+
+
+   
+        <script>
+
+        
+            var contador = 10;
+            var id= setInterval(function (){
+                                contador--;
+                               var divContador = document.querySelector("#cuentaAtras")
+                               divContador.innerHTML = contador;
+
+                               if(contador==0){
+                                   clearInterval(id);
+                                   divContador.innerHTML = "Se te acabó el tiempo!!!";
+                               }
+                        }, 1000);
+        
+   
+
+
+        </script> -->
+        
+
+        <h1>Que las imágenes cambien solas y se reinicien en la última</h1>
+
+            <center>
+
+                <div id="imagenPrincipal">
+
+                </div>
+
+                <div id="otrasImagenes">
+
+                </div>
+
+                <!-- <img id="foto" width="900px" height="900px" src="img/1.jpg" alt="">
+                <br>
+                <img onmouseover="cambioImagen(0)" width="200px" height="200px" src="img/2.jpg" alt="">
+                <img onmouseover="cambioImagen(1)" width="200px" height="200px" src="img/3.jpg" alt="">
+                <img onmouseover="cambioImagen(2)" width="200px" height="200px" src="img/4.jpg" alt="">
+                <img onmouseover="cambioImagen(3)" width="200px" height="200px" src="img/5.jpg" alt=""> -->
+
+            </center>
+
+            <script>
+
+                var imagen = ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg"];         //primero creo una array de las imagenes                 
+                var imagenGrande = document.querySelector("#imagenPrincipal");                     //una var que dirijo donde se tiene que ver la imagen principal
+                var galeriaImagenes = document.querySelector("#otrasImagenes");                   //otra var que dirijo donde se alojan las demás imagenes
+
+                var resultadoImagenes="";
+                    for(var img in galeriaImagenes){
+                        resultadoImagenes = resultadoImagenes +  "<img onclick='cambiarImagen(this.src)' src='"+ galeriaImagenes[img] +"'/>";
+                }
+                    galeriaImagenes.innerHTML = resultadoImagenes;
+
+                function cambiarImagen(rutaImagen){
+                    imagenGrande.innerHTML = "<img src='" + rutaImagen + "'/>";
+                }
+
+                var cambiaImagenes = 0;   
+                    carrusel (function() {
+                        var cambio = cambiaImagenes%imagen.length;
+                            imagenGrande.innerHTML = "<img src='"+ imagen[cambio] +"'>";
+                                cambiaImagenes++; 
+                        }, 2000);
+
+                cambiarImagen(galeriaImagenes[0]);
+                                       
+            </script>
+
+
+
+
+<!-- <div id="divMainImg"></div>
+
+<div id="divImg"></div>
+
+<script>
+   
+    
+
+    var listaImagenes=["img/chica1.jpg","img/chica2.jpg","img/chica3.jpg","img/chica3.jpg","img/chica3.jpg","img/chica3.jpg"];
+    var imgGrande = document.querySelector("#divMainImg");
+    var divListadoImg = document.querySelector("#divImg");
+
+    var resultadoImagenes="";
+    for(var img in listaImagenes){
+        resultadoImagenes = resultadoImagenes +  "<img onclick='cambiarImagen(this.src)' src='"+listaImagenes[img]+"'/>";
+    }
+    divListadoImg.innerHTML = resultadoImagenes;
+
+
+    function cambiarImagen(rutaImagen){
+        imgGrande.innerHTML = "<img src='" + rutaImagen + "'/>";
+    }
+
+    var contadorImagenes=0;
+    setInterval(function(){
+        var posicion = contadorImagenes%listaImagenes.length;
+        imgGrande.innerHTML = "<img src='"+listaImagenes[posicion]+"'/>";
+        contadorImagenes++;
+    }, 2000)
+
+    debugger;
+    cambiarImagen(listaImagenes[0]); -->
+
+    
+</script>
+
+    </body>
+
+</html>
