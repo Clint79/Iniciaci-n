@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <title>Restaurante Talosi - Home</title>
+
+    <style>
+        .how-it-works {
+    background: #f5f5fa;
+	padding-bottom: 30px;
+}
+
+.board{
+	/*width: 75%;
+	margin: 60px auto;
+	margin-bottom: 0;
+	box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
+}
+.board .nav-tabs {
+	position: relative;
+	/* border-bottom: 0; */
+	/* width: 80%; */
+	margin: 40px auto;
+	margin-bottom: 0;
+	box-sizing: border-box;
+
+}
+
+.board > div.board-inner > .nav-tabs {
+	border: none;
+}
+
+p.narrow{
+	width: 60%;
+	margin: 10px auto;
+}
+
+.liner{
+	height: 2px;
+	background: #ddd;
+	position: absolute;
+	width: 80%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	z-index: 1;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: #555555;
+	cursor: default;
+	/* background-color: #ffffff; */
+	border: 0;
+	border-bottom-color: transparent;
+	outline: 0;
+}
+
+span.round-tabs{
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	display: inline-block;
+	border-radius: 100px;
+	background: white;
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	text-align: center;
+	font-size: 25px;
+}
+
+span.round-tabs.one{
+	border: 2px solid #ddd;
+	color: #ddd;
+}
+
+li.active span.round-tabs.one, li.active span.round-tabs.two, li.active span.round-tabs.three, li.active span.round-tabs.four, li.active span.round-tabs.five {
+	background: #69cb95 !important;
+	border: 2px solid #69cb95;
+	color: #fff;
+}
+
+span.round-tabs.two{
+	border: 2px solid #ddd;
+	color: #ddd;
+}
+
+span.round-tabs.three{
+	border: 2px solid #ddd;
+	color: #ddd;
+}
+
+span.round-tabs.four{
+	border: 2px solid #ddd;
+	color: #ddd;
+}
+
+span.round-tabs.five{
+	border: 2px solid #ddd;
+	color: #ddd;
+}
+
+.nav-tabs > li.active > a span.round-tabs{
+	background: #fafafa;
+}
+.nav-tabs > li {
+	width: 20%;
+}
+
+.nav-tabs > li a{
+	width: 70px;
+	height: 70px;
+	margin: 20px auto;
+	border-radius: 100%;
+	padding: 0;
+}
+
+.nav-tabs > li a:hover{
+	background: transparent;
+}
+
+.tab-content{
+}
+.tab-pane{
+	position: relative;
+	padding-top: 50px;
+}
+
+.btn-outline-rounded{
+	padding: 10px 40px;
+	margin: 20px 0;
+	border: 2px solid transparent;
+	border-radius: 25px;
+}
+
+.btn.green{
+	background-color:#69cb95;
+	/*border: 2px solid #5cb85c;*/
+	color: #ffffff;
+}
+
+@media( max-width : 585px ){
+
+	.board {
+		width: 90%;
+		height:auto !important;
+	}
+	span.round-tabs {
+		font-size:16px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.tab-content .head{
+		font-size:20px;
+	}
+	.nav-tabs > li a {
+		width: 50px;
+		height: 50px;
+		line-height:50px;
+	}
+
+	li.active:after {
+		content: " ";
+		position: absolute;
+		left: 35%;
+	}
+
+	.btn-outline-rounded {
+		padding:12px 20px;
+	}
+}
+    </style>
+
+    
+</head>
+
+<body>
+
+    <header class="row">
+        
+            <div class="col-4"></div>
+            <div class="col-4">
+                <a href="home.html"><img class="logo" alt="Restaurante Talosi" src="../web restaurante/img/logotiny.png"></a>
+            </div>
+            <div class="col-4"></div>
+
+            <section  class="section how-it-works" id="how-it-works">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="how-it-works-heading">
+                            <h2 class="section-title">How It Work's</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 board">
+                            <h2>Welcome to IGHALO!<sup>™</sup></h2>
+                           <div class="board-inner">
+                                <ul class="nav nav-tabs" id="myTab">
+                                    <div class="liner"></div>
+                                    <li class="active">
+                                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab" title="User Experience">
+                              <span class="round-tabs one">
+                                      <i class="icon icon-profile-male"></i>
+                              </span>
+                                        </a></li>
+        
+                                    <li><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" title="Sketch">
+                             <span class="round-tabs two">
+                                 <i class="icon icon-pencil"></i>
+                             </span>
+                                    </a>
+                                    </li>
+                                    <li><a href="#prototyping" aria-controls="prototyping" role="tab" data-toggle="tab" title="Prototyping">
+                             <span class="round-tabs three">
+                                  <i class="icon icon-layers"></i>
+                             </span> </a>
+                                    </li>
+        
+                                    <li><a href="#uidesign" aria-controls="uidesign" role="tab" data-toggle="tab" title="UI Design">
+                                 <span class="round-tabs four">
+                                      <i class="icon icon-aperture"></i>
+                                 </span>
+                                    </a></li>
+        
+                                    <li><a href="#doner" aria-controls="doner" role="tab" data-toggle="tab" title="Development">
+                                 <span class="round-tabs five">
+                                      <i class="icon icon-tools-2"></i>
+                                 </span> </a>
+                                    </li>
+        
+                                </ul></div>
+        
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="home">
+        
+                                    <h3 class="head text-center">User Experience</h3>
+                                    <p class="narrow text-center">
+                                        Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                                    </p>
+        
+                                    <p class="text-center">
+                                        <a href="" class="btn btn-success btn-outline-rounded green"> Get Quote <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="profile">
+                                    <h3 class="head text-center">Sketch</h3>
+                                    <p class="narrow text-center">
+                                        Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                                    </p>
+        
+                                    <p class="text-center">
+                                        <a href="" class="btn btn-success btn-outline-rounded green"> Get Quote <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                                    </p>
+        
+                                </div>
+                                <div class="tab-pane fade" id="prototyping">
+                                    <h3 class="head text-center">Prototyping</h3>
+                                    <p class="narrow text-center">
+                                        Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                                    </p>
+        
+                                    <p class="text-center">
+                                        <a href="" class="btn btn-success btn-outline-rounded green"> Get Quote <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="uidesign">
+                                    <h3 class="head text-center">UI Design</h3>
+                                    <p class="narrow text-center">
+                                        Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                                    </p>
+        
+                                    <p class="text-center">
+                                        <a href="" class="btn btn-success btn-outline-rounded green"> Get Quote <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="doner">
+                                    <div class="text-center">
+                                        <i class="img-intro icon-checkmark-circle"></i>
+                                    </div>
+                                    <h3 class="head text-center">Development</h3>
+                                    <p class="narrow text-center">
+                                        Lorem ipsum dolor sit amet, his ea mollis fabellas principes. Quo mazim facilis tincidunt ut, utinam saperet facilisi an vim.
+                                    </p>
+                                    <p class="text-center">
+                                        <a href="" class="btn btn-success btn-outline-rounded green"> Get Quote <span style="margin-left:10px;" class="glyphicon glyphicon-send"></span></a>
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </header>
+
+
+    <main>
+        <div class="divimghome">
+            <img class="home" src="../web restaurante/img/home.jpg">
+        </div>
+        <h1>Restaurante Talosi</h1>
+
+        <table style="width: 100%;">
+            <tr>
+                <td class="td1">
+                    <img class="imghome" src="img/luces.jpg" style="width: 100%;" />
+                </td>
+                <td>
+                    <div class="textoGrande">
+                        "Descubre sabores que nunca has probado en el restaurante más vanguardista de la ciudad.
+                        Talosi une modernidad en la cocina con un ambiente casero y relajado donde pasarás unos momentos
+                        que no olvidarás jamás."
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+</body>
+
+<footer>
+
+    <div class="footerCol">
+        <img width="200px" src="../web restaurante/img/logotiny.png">
+        <br>
+        <br>
+        <p class="direccion"><a class="enlacestexto" href="midereccion@gmail.com">midereccion@gmail.com</a></p>
+        <p class="direccion">Restaurante Tolosi</p>
+        <p class="direccion">Benito Velcibuelles 45, 28080 Madrid</p>
+        <p class="direccion">Abiertos cuando no hemos cerrado</p>
+    </div>
+
+    <div  class="footerCol">
+        Horario de apertura
+        <div>De Lunes a Viernes</div>
+        <div>Cuando no esta cerrado</div>
+        <div>Igual que de Lunes a Viernes</div>
+        <br>
+       <div>
+            <p class="direccion"><a class="enlacestexto" href="home.html">Restaurante Talosi</a></p>
+            <p class="direccion"><a class="enlacestexto" href="carta.html">Carta</a></p>
+            <p class="direccion"><a class="enlacestexto" href="ccontacto.html">Contacto</a></p>
+            <p class="direccion"><a class="enlacestexto" href="trabajo.html">Trabaja con nosotros</a></p>
+        </div>
+    </div>
+    <div  class="footerCol">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15109.215219353879!2d-115.82277408351202!3d37.24008530662563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b81baaba3e8c81%3A0x970427e38e6237ae!2s%C3%81rea%2051%2C%20Nevada%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1624984738585!5m2!1ses!2ses"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</footer>
+
+
+</html>

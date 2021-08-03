@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Esto es una prueba</title>
+
+    </head>
+
+    <body>
+        <p>¡Hola Paco!</p>
+        <div style="color: green;">Verde</div>
+
+
+        <table border="1px">
+            <caption>Prueba examen</caption>
+
+            <tr>
+                <th>1</th>
+                <td>2</td>
+                <td>3</td>
+            </tr
+            <tr>
+                <th>4</th>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+        <form>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                    <label name="Nombre">Nombre:</label><input type="text"><br>
+                    <label name="Localidad">Localidad:</label><input type="text"><br>
+                    <label name=" Estado civil">Estado Civil:</label>
+                    <select>
+                        <option value="Casado">Casado</option>
+                        <option value="Soltero">Soltero</option><br>
+                    </select>
+                    <p>Escribe algo sobre tí:</p>
+                    <textarea name="Escribe algo sobre tí" id="sobreTi" cols="50" rows="20"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de Usuario</legend>
+                    <label name="Nick">Nick:</label><input type="text" placeholder="Escribe el nick que quieres tener"><br>
+                    <label name="Avatar">Sube tu avatar:</label><input type="file" name="archivos"><br>
+                    <label name="Email">Email:</label><input type="email" placeholder="xxxx@xxx.xx"><br>
+                    <label name="Contaseña">Contraseña:</label><input type="password"><meter min="0" max="10" value="5" low="4" high="7"></meter><br>
+            </fieldset>
+            <input type="checkbox"><label name="aceptar">Acepto las <b>condiciones legales</b></label><br>
+            <input type="submit" value="Enviar formulario"><br>
+
+            <br>
+
+            <h2>
+                1.	Crea un programa que pida números por pantalla hasta que escribas la palabra “fin”. Cuando se introduzca “fin”, no pidas más números y muestra en el navegador el resultado de la suma de todos los números introducidos
+            </h2>
+
+            <script>
+                    debugger
+                    var numero = new Array(1000);
+                    /* var final = "fin"; */
+                    var suma = 0;
+                    cantidad = 10000;
+
+                    for ( var i = 0; i <= cantidad; i++){
+                        numero[i] = parseInt(prompt("Selecciona un número y para acabar introduce 'fin'"));
+                            if (numero == "fin"){
+                                
+                                
+                            }else{
+                                suma = suma + numero[i];
+                                
+                            }
+                            document.write(suma)
+                    }
+                   
+            </script>
+            
+            
+        </form>
+
+        <footer>
+
+            <iframe>Insertar mapa del mundo</iframe>
+    
+        </footer>
+
+        <script>
+
+            var x = 5;
+            for (var i=0; i<6; i++)
+            {
+                ++x;
+                document.write(x + "<br>");
+                x++;
+                i++;
+            }
+
+            var i=0;
+            while(i<100){
+                if(i==1 || i==10 || i==50 ){
+                document.write(i + "<br/>");
+                }
+                i++;
+            }
+
+            x = 1;
+            for (i=0; i<6; i++){
+                if(x==2){
+                    x= x +2;
+                }else{
+                    x= x - 1;
+                }
+            }
+            console.log(x)
+
+        </scrip>
+
+
+
+    </body>
+
+</html>
+
+
