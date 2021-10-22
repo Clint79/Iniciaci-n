@@ -1,0 +1,209 @@
+<? xml version="1.0" encoding="UTF-8"?>
+
+    Ejercicio 1.
+
+        <pedido>
+            <nombre>Juan</nombre>
+            <apellido1>Delgado</apellido1>
+            <apellido2>Martinez</apellido2>
+            <articulo>
+                <tipo>Bicicleta</tipo>
+                <modelo>A2023</modelo>
+                <cantidad>1</cantidad>
+            </articulo>
+            <direccion>
+                <Calle>Barco</Calle>
+                <numero>4</numero>
+                <piso>Tercero</piso>
+                <letra>A</letra>
+            <fecha>
+                <dia>19</dia>
+                <mes>5</mes>
+                <year>2000</year>
+            </fecha>
+        </pedido>
+
+
+    Ejercicio 2.
+
+        <tablas>
+            <tabla1>
+                <nombre></nombre>
+                <apellidos></apellidos>
+                <dni></dni>
+            </tabla1>
+            <tabla2>
+                <codigo></codigo>
+                <nombre></nombre>
+                <descripcion></descripcion>
+            </tabla2>
+        </tablas>
+
+
+    Ejercicio 3.
+
+        <menuDesayuno>
+            <denominacion>
+                <plato1>Gofres Belga</plato1>
+                <plato2>Gofres Belga con fresas</plato2>
+                <plato3>Gofres Belga con frutas del bosque</plato3>
+                <plato4>Tostada francesa</plato4>
+                <plato5>Desayuno de la casa</plato5>
+            </denominacion>
+            <precio moneda="euros">
+                <precio1>5,95</precio1>
+                <precio2>7,95</precio2>
+                <precio3>8,95</precio3>
+                <precio4>4,50</precio4>
+                <precio>6,95</precio>
+            </precio>
+            <descripciones>
+                <descripcion1>Dos de nuestros famosos gofres belgas con abundante sirope</descripcion1>
+                <descripcion2>Ligeros gofres belgas cubiertos de fresa y nata montada</descripcion2>
+                <descripcion3>Ligeros gofres belgas cubiertos con frutas del bosque y nata montada</descripcion3>
+                <descripcion4>Dos gruesas rebanadas de nuestro pan francés casero</descripcion4>
+                <descripcion5>Dos huevos, bacon o salchicha, tostada y patatas fritas</descripcion5>
+            </descripciones>
+            <calorias>
+                <caloria1>650</caloria1>
+                <calorias2>900</calorias2>
+                <calorias3>900</calorias3>
+                <calorias4>600</calorias4>
+                <calorias5>950</calorias5>
+            </calorias>
+        </menuDesayuno>
+
+
+    Ejercicio 4.
+
+        <ofertasCd>
+            <Cancion1>
+                <titulo>Sill goes the blues</titulo>
+                <artista>Gary Moore</artista>
+                <pais>UK</pais>
+                <discografica>Virgin records</discografica>
+                <precio>10,20</precio>
+                <yearPublicacion>1990</yearPublicacion>
+            </Cancion1>
+            <Cancion2>
+                <titulo>One night only</titulo>
+                <artista>Bee Gees</artista>
+                <pais>UK</pais>
+                <discografica>Polydor</discografica>
+                <precio>10,90</precio>
+                <yearPublicacion>1998</yearPublicacion>
+            </Cancion2>
+            <Cancion3>
+                <titulo>When a man loves a woman</titulo>
+                <artista>Percy Sledge</artista>
+                <pais>USA</pais>
+                <discografica>Atlantic</discografica>
+                <precio>8,70</precio>
+                <yearPublicacion>1987</yearPublicacion>
+            </Cancion3>
+            <Cancion4>
+                <titulo>Big Willye stile</titulo>
+                <artista>Will Smith</artista>
+                <pais>USA</pais>
+                <discografica>Columbia</discografica>
+                <precio>9,90</precio>
+                <yearPublicacion>1997</yearPublicacion>
+            </Cancion4>
+            <Cancion5>
+                <titulo>La canción de Juan Perro</titulo>
+                <artista>Radio futura</artista>
+                <pais>España</pais>
+                <discografica>Sony music-Ariola</discografica>
+                <precio>9,90</precio>
+                <yearPublicacion>1987</yearPublicacion>
+            </Cancion5>
+            <Cancion6>
+                <titulo>The dock of the bay</titulo>
+                <artista>Otis Reeding</artista>
+                <pais>USA</pais>
+                <discografica>Atlantic</discografica>
+                <precio>7,90</precio>
+                <yearPublicacion>1987</yearPublicacion>
+            </Cancion6>
+        </ofertasCd>
+
+
+    Ejercicio 5.
+
+        <mensaje>
+            <remite>
+                <nombre>Alfredo Reino</nombre>
+                <email>tontoelnabo@.com</email>
+            </remite>
+            <destinatario>
+                <nombre>Bill Clinton</nombre>
+                <email>precoz@cosablanca.com</email>
+            </destinatario>
+            <asunto>Hola Bill</asunto>
+            <texto>
+                <parrafo1>Hola que tal?</parrafo1>
+                <parrafo2>Hace mucho tiempo que no escribes. A ver si llamas y quedamos pronto</parrafo2>
+                <parrafo3>Un saludo</parrafo3>
+            </texto>
+        </mensaje>
+
+
+    Ejercicio 6.
+
+        <ciudades>
+            <ciudad1>
+                <nombre>Nueva Delhi</nombre>
+                <pais continente="Ásia">India</pais>
+            </ciudad1>
+            <ciudad1>
+                <nombre>Lisboa</nombre>
+                <pais continente="Europa">Portugal</pais>
+            </ciudad1>
+            <ciudad1>
+                <nombre>El Cairo</nombre>
+                <pais continente="África">Egipto</pais>
+            </ciudad1>
+        </ciudades>
+
+
+    Ejercicio 7.
+
+        <clasesArboles>
+            <arbo1>
+                <especie>Acer monspessulanum</especie>
+                <nombre>Nombre común: Arce de Montpellier, Arce menos</nombre>
+                <vegetacion>Vegetación: Caducifolio</vegetacion>
+                <altura>Altura: De 6 a 10 metros</altura>
+                <formaEstructura>Forma y estructura: Copa ésferica. Tronco principal recto con bifurcaciones. Ramaje colgante</formaEstructura>
+                <colorPrimavera>Color en primavera: Haz verde brillante, envés verde blanquecino</colorPrimavera>
+                <resistenciaHeladas>Resistente a las heladas: Heladas fuertes, hasta -15ºC</resistenciaHeladas>
+            </arbo1>
+            <arbo2>
+                <especie>Olea Europea</especie>
+                <nombre>Nombre común: Olivo</nombre>
+                <vegetacion>Vegetación: Perenne</vegetacion>
+                <altura>Altura: De  8 a 15 metros</altura>
+                <formaEstructura>Forma y estructura: Copa irregular. Tronco principal irregular con bifurcaciones. Ramaje tortuoso</formaEstructura>
+                <colorPrimavera>Color en primavera: Haz verde oscuro, énves verde plateado</colorPrimavera>
+                <resistenciaHeladas>Resitencia a las heladas: Heladas medias, hasta -10ºC</resistenciaHeladas>
+            </arbo2>
+            <arbo3>
+                <especie>Platanus Orientalis</especie>
+                <nombre>Nombre común: Plátano</nombre>
+                <vegetacion>Vegetación: Caducifolio</vegetacion>
+                <altura>Altura: De 20 a 25 metros</altura>
+                <formaEstructura>Forma y estructura: Copa ovoidal. Tronco principal recto. Ramaje expandido</formaEstructura>
+                <colorPrimavera>Color en primavera: Ha verde medio, énves verde claro</colorPrimavera>
+                <colorOtono>Color en Otoño: Ocre</colorOtono>
+                <resistenciaHeladas>Resitencia a las heladas: Heladas fuertes, hasta -20ºC</resistenciaHeladas>
+            </arbo3>
+            <arbo4>
+                <especie>Quercus ilex</especie>
+                <nombre>Nombre común: Encina</nombre>
+                <vegetacion>Vegetación: Perenne</vegetacion>
+                <altura>Altura: En torno a los 25 metros</altura>
+                <formaEstructura>Forma y estructura: Copa esférica y elíptica irregular. Tronco principal recto. Ramaje tortuoso.</formaEstructura>
+                <colorPrimavera>Color en primavera: Plateado en hojas jóvenes. En hojas antiguas, haz verde oscuro, énves plateado.</colorPrimavera>
+                <resistenciaHeladas>Resitencia a las heladas: Heladas fuertes, hasta -15ºC</resistenciaHeladas>
+            </arbo4>
+        </clasesArboles>
